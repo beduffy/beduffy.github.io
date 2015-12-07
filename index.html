@@ -6,6 +6,10 @@
     <link href="other_files/lightbox.css" rel="stylesheet">
 
 <style>
+    body {
+        background-color: azure;
+    }
+
     .blog-image {
         max-width:20%;
         max-height:100%;
@@ -18,8 +22,15 @@
     }
 
     .time-period {
-        font-size: x-large;
-
+        /*font-size: x-large;*/
+        /*font-family: 'Open Sans', sans-serif;*/
+        /*font-size: 30px;*/
+        /*font-weight: 300;*/
+        /*line-height: 32px;*/
+        /*margin: 0 0 72px;*/
+        /*text-align: center;*/
+        color: #CEF0D4; font-family: 'Rouge Script', cursive; font-size: 50px; font-weight: normal; line-height: 48px; margin: 0 0 50px; text-align: center; text-shadow: 1px 1px 2px #082b34;
+        /*font-family: 'Helvetica Neue', sans-serif; font-size: 50px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center;*/
     }
 
      .time-period:nth-child(even) {
@@ -54,6 +65,13 @@
         float: left;
         height: 250px;
         color: cadetblue;
+    }
+
+    #widi {
+        text-align: center;
+        /*color: #ffffff; font-family: 'Lato', sans-serif; font-size: 54px; font-weight: 300; line-height: 58px; margin: 0 0 58px;*/
+        /*color: #7c795d; font-family: 'Trocchi', serif; font-size: 45px; font-weight: normal; line-height: 48px; margin: 0;*/
+        color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 50px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center;
     }
 </style>
 </head>
@@ -102,13 +120,15 @@
     <!-- TODO add more elements of stuff from a cv?-->
     <a href="/gallery.html">All pictures in one place.</a>
 
-    <h3 id="widi" >What I did In:</h3>
+    <h1 id="widi">What I did In:</h1>
 
     <h4 class="time-period">December 2015</h4>
     <ul>
-        <li>Found out that Github hosted free static webpages and decided to create this one for a place to put my achievenments in one place.
-            It also encourages me to get more done because the whole world can now see I'm doing. Great place for me to practice my HTML, CSS and JavaScript.
-            I can also eventually use this web page for simple games and other visualisations.</li>
+        <li><h2><b>Created this website.</b></h2>Found out that Github hosted free static webpages and decided to create one so I could have a place to put up all the things I have worked on.
+            It also encourages me to get more done because other people can now see I'm doing and it's a great place for me to practice my HTML, CSS and JavaScript.
+            I can also eventually use this web page for simple games and other visualisations.
+            A game displayed here would effectively combine all 3 of my main specialisations above
+            e.g. the game contains AI, graphics and of course Web technologies to display it here.</li>
 
         <!--<li>Computer Graphics 3D game project.</li>-->
         <!--<li>A good amount of work for my 4th year thesis on Video Understanding. Started using Caffe deep learning library on Linux</li>-->
@@ -125,7 +145,7 @@
         <li>A good amount of work for my 4th year thesis on Video Understanding. Started using Caffe deep learning library on Linux</li>
         <li>Read a lot about the theory of neural networks. Convolution, Recurrent Neural Nets, Backpropagation etc.</li>
         <li>Learned SQL for college.</li>
-        <li>10+ LearnOpenGL.com tutorials.</li>
+        <li>10+ (<a href="http://www.learnopengl.com" >learnopengl.com</a>) tutorials. </li>
         <li>College work.</li>
         <li>Began to learn how to use blender.</li>
     </ul>
@@ -133,6 +153,7 @@
     <h4 class="time-period">September-October 2015</h4>
     <ul>
         <li>Computer Vision assignment.</li>
+        <li>10+ (<a href="http://www.learnopengl.com" >learnopengl.com</a>) tutorials.</li>
     </ul>
 
     <h4 class="time-period">Summer 2015</h4>
@@ -167,6 +188,7 @@
     <a class="lightboxImage" href="assets/SpaceshipGame3.bmp" data-lightbox="image-1" data-title="Spaceship Game (Summer and Winter 2014)"><img class="blog-image" src="assets/SpaceshipGame3.bmp"></a>
 
     <h4 class="time-period">Summer 2014</h4>
+    <!-- TODO coral for some reason now (odd above) but maybe always keep different year a different color. -->
     <ul>
         <li>Began for the first time to work on side projects for programming. I started with game programming in C++ and DirectX.
             I followed tutorials on YouTube by a game named Chili and I also read a book called 'Beginning Game Programming' by Jonathan Harbour.
