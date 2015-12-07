@@ -5,8 +5,6 @@
     <title></title>
     <link href="other_files/lightbox.css" rel="stylesheet">
 
-
-</head>
 <style>
     .blog-image {
         max-width:20%;
@@ -31,19 +29,48 @@
     .time-period:nth-child(odd) {
          color: darkblue;
      }
+
+    #container {
+        width: auto;
+        background-color: #ffcc33;
+        margin: auto;
+    }
+
+    #first {
+        width: 33%;
+        float: left;
+        height: 60px;
+        color: orangered;
+    }
+    #second {
+        width: 33%;
+        float: left;
+        height: 60px;
+        color: green;
+    }
+    #third {
+        /*clear: both;*/
+        width: 33%;
+        float: left;
+        height: 60px;
+        color: cadetblue;
+    }
 </style>
+</head>
+
 <body>
     <h1 style="text-align: center;">Blog of Ben Duffy</h1>
 
-    <h2 style="text-align: left;">Graphics, Visualisation and Game Programming</h2>
+    <div id="container">
+        <h2 id="first" style="text-align: left;">Graphics, Visualisation and Game Programming</h2>
 
-    <h2 style="text-align: center;">Artificial Intelligence</h2>
+        <h2 id="second" style="text-align: center;">Artificial Intelligence</h2>
 
-    <h2 style="text-align: right;">Web Development</h2>
-
+        <h2 id="third" style="text-align: right;">Web Development</h2>
+    </div>
     <!-- TODO Make blog of what I worked on last month or what I'm working on right now. Pointless to say what I will work on because I might not? -->
     <!-- TODO add more elements of stuff from a cv?-->
-    <a href="/gallery.html">Gallery</a>
+    <a href="/gallery.html">All pictures in one place.</a>
 
     <h3 id="widi" >What I did In:</h3>
 
