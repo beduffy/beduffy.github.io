@@ -1438,6 +1438,8 @@ mat4.lookAt = function(eye, center, up, dest) {
         dest[14] = -(z0*eyex + z1*eyey + z2*eyez);
         dest[15] = 1;
 
+        //console.log(dest);
+
         return dest;
 };
 
