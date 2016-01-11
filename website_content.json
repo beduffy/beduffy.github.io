@@ -1,0 +1,51 @@
+{
+  "specialisations": {
+    "Graphics, Visualisation and Game Programming": [
+      //    LibGDX
+      //Phaser.js
+      //DirectX
+      //OpenGL
+      //OpenGL ES
+      //WebGL
+      //GLFW
+    ],
+    "Artificial Intelligence": [
+      //Machine Learning
+      //Neural Networks
+      //Board game playing AI
+      //AI in video games
+      //Computer Vision with OpenCV
+    ],
+    "Web Development": [
+      //jQuery
+      //Bootstrap
+      //Google Maps API
+      //Google App Engine
+      //D3.js
+      //Leaflet JS
+      //WebGL
+    ]
+  },
+  "years": [
+    {
+      "year": 2016,
+      "months": [
+        {
+          "month": "January",
+          "content": {
+            "list_items": [
+            ],
+            "videos": [
+            ],
+            "pictures": [
+            ]
+          }
+        }
+      ]
+    },
+    {
+    },
+    {
+    }
+  ]
+}
