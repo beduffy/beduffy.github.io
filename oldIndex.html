@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ben Duffy</title>
+    <link href="other_files/lightbox.css" rel="stylesheet">
+
+<style>
+    body {
+        background-color: azure;
+    }
+
+    .blog-image {
+        max-width:20%;
+        max-height:100%;
+        /*margin:auto;*/
+        /*display:block;*/
+    }
+
+    a.lightboxImage {
+        width: 100px;
+    }
+
+    .time-period {
+        /*font-size: x-large;*/
+        /*font-family: 'Open Sans', sans-serif;*/
+        /*font-size: 30px;*/
+        /*font-weight: 300;*/
+        /*line-height: 32px;*/
+        /*margin: 0 0 72px;*/
+        /*text-align: center;*/
+        color: #CEF0D4; font-family: 'Rouge Script', cursive; font-size: 50px; font-weight: normal; line-height: 48px; margin: 0 0 50px; text-align: center; text-shadow: 1px 1px 2px #082b34;
+        /*font-family: 'Helvetica Neue', sans-serif; font-size: 50px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center;*/
+    }
+
+
+    .period-2016 {
+        color: dodgerblue;
+    }
+
+    .period-2015 {
+        color: darkblue;
+    }
+
+    .period-2014 {
+        color: coral;
+    }
+
+     /*.time-period:nth-child(even) {*/
+         /*color: coral;*/
+     /*}*/
+/**/
+    /*.time-period:nth-child(odd) {*/
+         /*color: darkblue;*/
+     /*}*/
+
+    #container {
+        width: auto;
+        background-color: #ffcc33;
+        margin: auto;
+    }
+
+    #first {
+        width: 33%;
+        float: left;
+        height: 250px;
+        color: orangered;
+    }
+    #second {
+        width: 33%;
+        float: left;
+        height: 250px;
+        color: green;
+    }
+    #third {
+        /*clear: both;*/
+        width: 33%;
+        float: left;
+        height: 250px;
+        color: cadetblue;
+    }
+
+    #widi {
+        text-align: center;
+        /*color: #ffffff; font-family: 'Lato', sans-serif; font-size: 54px; font-weight: 300; line-height: 58px; margin: 0 0 58px;*/
+        /*color: #7c795d; font-family: 'Trocchi', serif; font-size: 45px; font-weight: normal; line-height: 48px; margin: 0;*/
+        color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 50px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center;
+    }
+
+    iframe {
+        display: block;
+    }
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-72229135-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+    <h1 style="text-align: center; color: #4c627c; font-family: 'Trocchi', serif; font-size: 45px; font-weight: normal; line-height: 48px; margin: 0;">Ben Duffy's adventures in Programming and Music.</h1>
+
+    <div id="container">
+        <div id="first">
+            <h2  style="text-align: left;">Graphics, Visualisation and Game Programming</h2>
+            <ul>
+                <li>LibGDX</li>
+                <li>Phaser.js</li>
+                <li>DirectX</li>
+                <li>OpenGL</li>
+                <li>OpenGL ES</li>
+                <li>WebGL</li>
+                <li>GLFW</li>
+            </ul>
+        </div>
+
+        <div id="second">
+            <h2 style="text-align: center;">Artificial Intelligence</h2>
+            <ul>
+                <li>Machine Learning</li>
+                <li>Neural Networks</li>
+                <li>Board game playing AI</li>
+                <li>AI in video games</li>
+                <li>Computer Vision with OpenCV</li>
+                <!--<li>Ontologies.</li>-->
+            </ul>
+        </div>
+
+        <div id="third">
+            <h2 style="text-align: right;">Web Development</h2>
+            <ul style="text-align: right;">
+                <li>jQuery</li>
+                <li>Bootstrap</li>
+                <li>Google Maps API</li>
+                <li>Google App Engine</li>
+                <li>D3.js</li>
+                <li>Leaflet JS</li>
+                <li>WebGL</li>
+            </ul>
+        </div>
+    </div>
+    <!-- TODO add more elements of stuff from a cv?-->
+    <!-- TODO quote of the month-->
+    <!--<a href="/gallery.html">All pictures in one place.</a>-->
+
+    <h1 id="widi">What I did In</h1>
+
+
+     <h4 class="time-period period-2016">January 2016</h4>
+
+    <h4 class="time-period period-2015">December 2015</h4>
+    <ul>
+        <li><h2><b>Created this website.</b></h2>Found out that Github hosted free static webpages and decided to create one so I could have a place to put up all the things I have worked on and that I am working on.
+            It also encourages me to get more done because other people can now see what I'm doing and it's a great place for me to practice my HTML, CSS and JavaScript.
+            This website is essentially my portfolio. I can mention things here that I wouldn't normally put on my CV (what employer cares that you did 10 tutorials in whatever topic?).
+            I can also eventually use this web page for simple games and other visualisations.
+            A game displayed here would effectively combine all 3 of my main specialisations above
+            e.g. if the game contains <span style="color: green;">AI</span>, <span style="color: orangered;">Graphics</span> and of course <span style="color: cadetblue;">Web technologies</span> to display it here.</li>
+         <!--TODO MYSQL DATABASE PROJECT ENTITY RELATIONSHIP, FUNCTIONAL DEPENDANCY, CONSTRAINTS, TRIGGERS, SECURITY.-->
+         <!--TODO FINAL COMPUTER VISION ASSIGNment. abandoned and removed objects-->
+         <!--VIDEO UNDERSTANDING KEY FRAMES, SCENE CLASSIFICATION, ETC-->
+         <!--TODO MOBILE COMMS? NAH-->
+        <li>Finished a 3D tank game I made for my 4th year College Computer Graphics module using OpenGL and C++. Some other libraries I used were SOIL for textures, FreeType for text rendering, glm for maths and Assimp for model importing.
+
+         I wanted to add much more features in the end like AI (boids), better texture mapping, better level generation, better collision, normal mapping etc. But in the end I ran out of time and it was only worth 10% of the module so I was almost getting full marks anyway.
+
+        The list of things I implemented:
+            <ul>
+        <li>Lighting (point lights, directional lights and spot lights).</li>
+        <li>Simple AI.</li>
+        <li>Stealth mode for the player tank. Alpha blending is used to show that stealth mode is activated and the enemy tanks can't see you.</li>
+        <li>Hierarchical models. The tank wheels and the tank turret.</li>
+        <li>Texture mapping for the level.</li>
+        <li>Models I created in Blender. The tank, the level and the bullets.</li>
+        <li>Text rendering.</li>
+        <li>Collision detection.</li>
+        <li>Particles for both the tank's boosters and enemy explosions.</li>
+        <li>A few more small things.</li>
+        <!--</ul></li>-->
+        <iframe width="560" height="315"
+            src="http://www.youtube.com/embed/P-e0a_SwSlw?autoplay=0" frameborder="0" allowfullscreen>
+        </iframe>
+        <!--<li>A good amount of work for my 4th year thesis on Video Understanding. Started using Caffe deep learning library on Linux</li>-->
+        <!--<li>Read a lot about the theory of neural networks. Convolution, Recurrent Neural Nets, Backpropagation etc.</li>-->
+        <!--<li>Learned SQL for college.</li>-->
+        <!--<li>10+ LearnOpenGL.com tutorials.</li>-->
+        <!--<li>College work.</li>-->
+        <!--<li>Began to learn how to use blender. Computer vision final assignment. </li>-->
+    </ul>
+
+    <h4 class="time-period period-2015">November 2015</h4>
+    <ul>
+        <li>Computer Vision assignment. Transform picture of book on table and use template matching to find out what page it is.</li>
+        <li>A good amount of work done for my 4th year thesis on Video Understanding. Started using Caffe deep learning library using Linux, Python (numpy, matplotlib, OpenCV and more).</li> <!-- TODO fix list-->
+        <li>Read a lot about the theory of neural networks. Convolution, Recurrent Neural Nets, Backpropagation etc.</li>
+        <li>Learned SQL for my Information Management module.</li>
+        <li>10+ (<a href="http://www.learnopengl.com" >learnopengl.com</a>) tutorials. </li>
+        <li>Began to learn how to use blender modelling software.</li>
+    </ul>
+
+    <h4 class="time-period period-2015">September-October 2015</h4>
+    <ul>
+        <li>Began 4th year Computer Engineering in TCD. My 1st semester modules were:
+            <ul>
+                <li>Computer Graphics. 3D objects, transformations, textures, camera views, matrices, lighting etc. Got a nice head start on this one from all my gaming side projects.</li>
+                <li>Computer Vision. Binary vision, histograms, edge detection, video, features, recognition etc.</li>
+                <li>Computer Architecture. Assembly IA32, RISC-I assembly, pipelines, caches, virtual memory, multiprocessing.</li>
+                <li>Information Management. Relational Databases, Relational algebra, SQL, NoSQL etc.</li>
+                <li>Mobile Communications. 2G, 3G, 4G, 5G, and all other wireless network technologies.</li>
+                <li>Engineering Management. Project management, project planning and project feasibility and evaluation. Team dynamics etc.</li>
+            </ul>
+        </li>
+        <li>Chose my 4th year thesis/project in 'Video Understanding'.
+        This project seems like it could be way out of league for me as it could be a project for a PhD or for all of Google, Microsoft and Facebook combined but I have a plan
+        for how to do it with Neural Networks and limit the scope so it is possible. And I've learned that choosing to do things that seem too difficult or seem impossible is the best way to improve at anything.
+            One hobby of mine is reading about all the new things that Neural Networks are getting good at (seeing, hearing, understanding etc).</li>
+        <li>Computer Vision glue bottle label assignment. Which glue bottles have labels and which don't. Picture soon.</li>
+        <li>10+ (<a href="http://www.learnopengl.com" >learnopengl.com</a>) tutorials.</li>
+    </ul>
+
+    <h4 class="time-period period-2015">Summer 2015</h4>
+    <ul>
+        <li>Learned Python, HTML, CSS, JavaScript, JSON languages and countless other libraries/frameworks.
+            Instantly took a liking to JavaScript and Python (my first interpreted languages) after the difficulty of having to write C++ for so long.
+            Learning them and comparing them really made me understand and appreciate the idea of a programming language more.</li>
+        <li>I got my first programming job at a startup called Pointy (<a href="http://www.pointy.com" >www.pointy.com</a>). I worked there as an intern for 4 months and learned an incredible amount.
+            <ul>
+                <b>Technologies learned:</b>
+                <li>Front end: HTML, CSS, JavaScript, jQuery, Bootstrap, Jinja2, SVG, D3.js, Google Maps API, AJAX, Google Charts. Leaflet JS.</li>
+                <li>Back end: Python, webapp2, Google app engine, bigTable.</li>
+                <li>Other: JSON, XML, Git, RESTful interface,</li>
+                <b>Responsibilities:</b>
+                <li>Built web crawlers in Python and jQuery to crawl millions of pages for specific info.</li>
+                <li>Created event system that logged any event occurring on server to create enough data for the graphs on the dashboards.</li>
+                <li>Created 7 different internal web pages/dashboards to display useful company information. These included 3 different dashboards containing many graphs created using D3.js, 2 different interactive maps with plenty of interactive features (buttons, conveyor belts, real time sales etc.) using the Google Maps API for one and Leaflet JS for the other. </li>
+                <li>Made many other minor fixes and improvements to web pages and to the Python code running Google app engine. Overall gained a lot of experience with both the front and back end.</li>
+                <li>Gained experience with code reviews, good code practices (style, documentation, clean structure etc) and learned about the business side of a startup. I was given a lot of freedom to come up with my own ideas for many solutions but also gained valuable experience working in a team and learned how to communicate technical ideas.</li>
+            </ul>
+        </li>
+        <li>In my repeat of Signals and Systems I did well, however in my repeat of Digital Circuits I got 33% which is technically a fail (and means you must repeat the whole year)
+            but this got pushed to 35% for some unknown reason (??? Thank the lord) which was enough to pass by compensation and I was able to pass the year. I was incredibly lucky even though I was so lazy when it came to those two modules.
+            Again it's only fair to mention what I do badly in as well, so no one thinks I'm just perfect at getting things done which I a 100% am not.</li>
+        <li>Pacman remake in LibGDX. Picture soon.</li>
+        <li>Finished 16 tutorials on OpenCV with C++ in preparation for my Computer Vision module in college.</li>
+        <li>Finished 10 tutorials on Phaser JavaScript game framework.</li>
+        <li>Finished 10 Java/Swing video tutorials where a game called DragonTale was created.</li>
+        <li>Finished 22 Chili intermediate DirectX video tutorials with C++ totalling around 33 hours of content.</li>
+        <li>Finished 26 Java LibGDX game framework tutorials at <a href="http://www.gamefromscratch.com/page/LibGDX-Tutorial-series.aspx" >gamesfromscratch.com.</a></li>
+        <li>Finished 5 WebGL JavaScript tutorials. I plan to finish more eventually so I could eventually display some nice 3D graphics on this webpage.</li>
+        <li>Instead of just reading articles about Neural Networks which is a pastime of mine, I followed a few tutorials in C++ and Python and learned some of the basics of how their architecture is programmed and how the networks are able to learn anything.</li>
+        <li>Read the first 3 chapters of 'Programming Game AI by Example' by Mat Buckland. It's one of the best books ever on the topic and I can't wait to finish it and apply all the topics covered.
+        <br>Some examples in the first 3 chapters are: Finite State Machines, Boids steering (flocking behaviours for AI etc),
+        <br>Some examples in the later chapters are: simple soccer simulation game with two teams, graphs, path finding,
+        scripting in Lua, goal-driven behaviour and Fuzzy Logic.</li>
+        <li>Created a Wormhole visualiser in both C++ with DirectX and JavaScript with Phaser. Video below is with C++ with plenty more videos coming in 2016 because of how many possibilities there are for amazing wormholes.</li>
+        <iframe width="560" height="315"
+            src="http://www.youtube.com/embed/YRor51Y35yA?autoplay=0" frameborder="0" allowfullscreen>
+        </iframe>
+    </ul>
+
+    <h4 class="time-period period-2015">Spring 2015</h4>
+    <ul>
+        <li>My second semester modules for 3rd year Computer Engineering were:
+            <ul>
+                <li>Operating Systems and Concurrent Systems. My favourite module of the year. <br>
+                    Topics covered for concurrency: mutual exclusion (mutexes), semaphores, SPIN (verifying concurrent programs), critical sections and concurrency with Linux, C and pthreads.<br>
+                    Topics covered for operating systems: Operating system architectures, memory management, processor scheduling, disk I/O and file systems. </li>
+                <li>Microprocessor Systems II.</li>
+                <li>Computer Networks.</li>
+                <li>Software Design and Implementation (part 2). The RPG game mentioned below was made for this module.</li>
+                <li>Computer Architecture II. VHDL was used to simulate and design an ALU with a shifter and fast registers. Also an instruction processor was designed and simulated. </li>
+                <li>Engineering Management. Innovation and Entrepreneurship. Coming up with a business idea, Business plans, marketing, ethics etc.</li>
+                <!-- TODO MORE DESCRIPTIONS FOR ABOVE-->
+            </ul>
+        </li>
+        <li>Created my TicTacToe AI engine in C++ and DirectX. Video below.</li>
+        <li>Created a remake of the PianoTile game (the game that sold over 50 million copies) in Java, Android and LibGDX. Video below.</li>
+        <li>Finished working on an RPG in LibGDX, Java and Android with 11 other people as part of a college project. This was a fun experience and it was difficult to manage because of how many people were involved. Video below.</li>
+        <li>Got my 4th scholarship in my advanced level 2 grade exam in RIAM for classical guitar.</li>
+        <li>Pointless just mentioning my successes in life on this website. I fail a lot, to succeed you must fail.
+            So I think it's fair to mention my failures too. <br>
+            I failed Digital Circuits and Signals and Systems so I had to repeat them at the end of the summer.</li>
+        <iframe width="560" height="315"
+            src="http://www.youtube.com/embed/TNB5vSIEbn4?autoplay=0" frameborder="0" allowfullscreen>
+        </iframe>
+        <iframe width="560" height="315"
+            src="http://www.youtube.com/embed/7Xut6_ZUBmg?autoplay=0" frameborder="0" allowfullscreen>
+        </iframe>
+        <iframe width="560" height="315"
+            src="http://www.youtube.com/embed/gsp7nc_QWso?autoplay=0" frameborder="0" allowfullscreen>
+        </iframe>
+
+    </ul>
+
+    <h4 class="time-period period-2014">Winter 2014</h4>
+    <ul>
+        <li>Began 3rd year Computer Engineering (I decided to specialise into Computer after 2 years of general engineering because I enjoyed it the most (I also hated everything else to be honest)). My 1st semester modules were:
+            <ul>
+                <li>Applied Probability.</li>
+                <li>Microprocessor Systems I.</li>
+                <li>Software Design and Implementation (part 1). 'The Dolphin Project' mentioned below was a project made for this module. Also Git and Android basics was taught.</li>
+                <li>Engineering Mathematics V. Probability and statistics, fourier methods and partial differential equations.</li>
+                <li>Signals and Systems.</li>
+                <li>Digital Circuits. Yuck. Probably the most difficult module ever.</li>
+            </ul><!-- TODO MORE DESCRIPTIONS FOR ABOVE-->
+        </li>
+        <li>Began to learn Java for the first time and found it more developer friendly than C++ but also very similar of course.
+            It was much easier to learn Java after going into sufficient detail with C++.</li>
+        <li>Finished 8 tutorials from <a href="http://www.learnopengles.com" >learnopengles.com</a> to learn enough for 'The Dolphin Project' below.
+            Tutorials topics went through lighting (per-vertex and per fragment), basic texturing, blending, texture filtering, vertex buffer objects and index buffer objects.
+            Learned a good bit about OpenGL ES 2, general Computer Graphics and Android.</li>
+        <li>Finished a 3D game called 'The Dolpin Project' in Android, Java and OpenGL ES. Sadly before recording the video, the dolphin was unfortunately lost in an accident. Per fragment Phong lighting, 6 different camera views, texturing, buttons and control of the cube was implemented. Video below with the cube.</li>
+        <li>Finished a prototype of my Spaceship Game in C++ and DirectX.</li>
+    </ul>
+    <iframe width="560" height="315"
+            src="http://www.youtube.com/embed/vb4DOiCkOGE?autoplay=0" frameborder="0" allowfullscreen>
+    </iframe>
+    <iframe width="560" height="315"
+            src="http://www.youtube.com/embed/Yo1CwiMBKxg?autoplay=0" frameborder="0" allowfullscreen>
+    </iframe>
+    <a class="lightboxImage" href="assets/SpaceshipGame1.bmp" data-lightbox="image-1" data-title="Spaceship Game (Summer and Winter 2014)"><img class="blog-image" src="assets/SpaceshipGame1.bmp"></a>
+    <a class="lightboxImage" href="assets/SpaceshipGame2.bmp" data-lightbox="image-1" data-title="Spaceship Game (Summer and Winter 2014)"><img class="blog-image" src="assets/SpaceshipGame2.bmp"></a>
+    <a class="lightboxImage" href="assets/SpaceshipGame3.bmp" data-lightbox="image-1" data-title="Spaceship Game (Summer and Winter 2014)"><img class="blog-image" src="assets/SpaceshipGame3.bmp"></a>
+
+<!--TODO POINTLESS ONLY SHOWING MY SUCCESSES (i DONT WANT people thinking im just perfect at everything and super productive) Productivity is a constant struggle for me and
+    college I generally dont do well in because I'm lazy when it comes to it. SO I'LL BE HONEST. I FAILED CHEMISTRY, SIGNALS AND SYSTEMS digital circuits and just barely passed 2nd year.
+    Alot of my assignments are late and a lot of the time i only start studying for an exam the night before. I set goals 10-20 goals weekly and on average only get half of them done. I have never gotten all my goals done,
+    However when the day comes that I learn to be even more productive and finish all my goals I will be truly dangerous. Anywhere these are my failures (we aren't all perfect). Now here are my success stories.-->
+    <h4 class="time-period period-2014">Summer 2014</h4>
+    <ul>
+        <li>Began for the first time to work on side projects for programming after 2 years of general engineering.
+            I started with game programming in C++ and DirectX.
+            I finished 20 video tutorials which taught DirectX and C++ by a guy named Chili. This totalled around 15 hours content.
+        </li>
+        <li>
+            I also read a book called 'Beginning Game Programming' by Jonathan Harbour which taught DirectX, C++, Windows development.
+        </li>
+        <li>Finished 15 Euler problems at <a href="https://projecteuler.net/archives" >www.projecteuler.net</a> with C++
+            but gave up after that when they started requiring serious math knowledge to prevent the program from running for 15 billion years.</li>
+        <li>Finished reading the 25 famous C++ tutorials at <a href=http://www.cplusplus.com/doc/tutorial/" >http://www.cplusplus.com/doc/tutorial/</a>.
+            I read them all at least 3 times each until I understood each one completely.
+            This was the first time I studied a language sort of in depth
+            (hard to say that with C++ to be honest because one could spend 10 years studying it and still not know everything).
+            But I honestly think doing this made learning anything and everything, but most importantly other languages, much easier to learn.
+            This is because, whether you want to admit it or not, C++ is quite simply difficult.
+            So it was worth it even if I suddenly never end up using C++ again.
+        </li>
+        <li>Using the skills learned I remade 6 games with C++ and simple DirectX over the summer. These were TicTacToe, Checkers, Minesweeper, Gomoku, Connect 4 and Snake. Pictures are below.</li>
+        <li>I also recorded Adam Rafferty's version of Superstition by Stevie Wonder on my classical guitar. Video is below.</li>
+    <!-- TODO FIND MORE THINGS I DID THIS SUMMER? EULER PROBLEMS? -->
+    </ul>
+
+    <a class="lightboxImage" href="assets/Checkers.bmp" data-lightbox="image-1" data-title="Checkers (Summer 2014)" ><img class="blog-image"  src="assets/Checkers.bmp"></a>
+    <a class="lightboxImage" href="assets/Connect4.bmp" data-lightbox="image-1" data-title="Connect4 (Summer 2014)" ><img class="blog-image" src="assets/Connect4.bmp"></a>
+    <a class="lightboxImage" href="assets/Gomoku.bmp" data-lightbox="image-1" data-title="Gomoku (5 in a row) (Summer 2014)"><img class="blog-image" src="assets/Gomoku.bmp"></a>
+    <a class="lightboxImage" href="assets/Minesweeper1.bmp" data-lightbox="image-1" data-title="Minesweeper (Summer 2014)"><img class="blog-image" src="assets/Minesweeper1.bmp"></a>
+    <a class="lightboxImage" href="assets/Minesweeper2.bmp" data-lightbox="image-1" data-title="Minesweeper (Summer 2014)"><img class="blog-image"src="assets/Minesweeper2.bmp"></a>
+    <a class="lightboxImage" href="assets/Snake.bmp" data-lightbox="image-1" data-title="Snake (Summer 2014)"><img class="blog-image"src="assets/Snake.bmp"></a>
+    <a class="lightboxImage" href="assets/TicTacToe.bmp" data-lightbox="image-1" data-title="I began game programming with TacTacToe at the start of Summer 2014"><img class="blog-image"src="assets/TicTacToe.bmp"></a>
+
+    <iframe width="560" height="315"
+            src="http://www.youtube.com/embed/IyZrrK4Fh-c?autoplay=0" frameborder="0" allowfullscreen>
+    </iframe>
+     <h4 class="time-period period-2014">Pre-Summer 2014</h4>
+    <ul>
+        <li>Completed 2 years of general engineering in TCD. Which was just bridges and other stuff with only 1 programming module per year.<br>
+            I was taught the basics of C++ in my 'Computer Engineering I' module in 1st year (variables, loops, functions etc). <br>
+            I was taught more advanced C++ in my 'Computer Engineering II' module in 2nd year (OOP, Pointers, Inheritance, Polymorphism, memory allocation, simple data structures, a bit of multithreading etc). <br>
+            <p>I never thought I was too good at programming from seeing many others around me easily solve problems which was discouraging.
+                However somewhere near the start of the programming module in 2nd year I decided that I'd actually try to give it a shot and see if it was possible to get good at programming.
+                So I worked at it, asked hundreds of questions to my Dad (who is a programmer) and slaved away and eventually an amazing thing happened. I got good at it (surprise surprise) and even started to enjoy it.
+                I made sure to do well in every lab assignment and got 100% in the big programming project which involved bank information and multi-threading.</p>
+
+            <p>And from then on I was happy to do programming for the rest of my life. Nothing beats the feeling of solving a problem. Dopamine being released is what people get addicted to (that warm fuzzy feeling).
+                Some people call this the Eureka effect, my maths teacher in school called it 'The Buzz'. I call it 'The God Feeling'. <br>
+                Doesn't matter what you call it though, it's real.
+                And it's sad most people in the world feel it only a few times a year when they could be feeling it daily.
+                It beats any other drug because it's free, the effect lasts longer, it actually improves your life, grows your brain, makes you happier and many other reasons. <br>
+                The bigger the problem, the bigger the buzz.</p>
+
+            <p>
+                The Buzz can be achieved from many disciplines, however I personally find programming is one of the easiest ones to get high from, as all it takes is a few keystrokes (or a few million keystrokes) and you've solved a problem.
+                And there are literally trillions of problems in programming. From the high level problems (Create game in C++, create neural network to recognize handwritten digits etc)
+                to middle level problems (create function to calculate the volume of a planet) to lower level problems (add two variables together, put a semicolon in the right place). <br>
+                Programming is also great because you have to keep improving to keep up with the fast pace of technology. My attitude is that anything I learn today will help me tomorrow, let alone a week, a month or 10 years from now.
+                This applies even if the topics are totally different e.g. Embedded Assembly vs Neural Networks with Python. This is because one can become better at learning itself.
+            </p>
+
+            <!-- TODO mention about music about my 2nd passion and struggles with doing engineering vs music.-->
+
+            <!-- TODO <p>I'm also very interested in music and have been playing and doing grades in Classical Guitar for 15 years now. I also play electric guitar and piano and have been in a few bands.</p> -->
+
+            <!-- TODO I LEFT SCHOOL wanting to do music and had a major dilemma in my life but now im happy i did what my parents wanted me to do.-->
+
+             <p>Modules taught in second year were: Solids and Structures, Computer Engineering II, Engineering and the Environment, Materials, Engineering Design III, Electronics,
+                 Engineering Design IV, Engineering Mathematics III, Engineering Mathematics IV, Themo-fluids.</p>
+
+            <p>Modules taught in first year were: Engineering Mathematics I, Engineering Mathematics II, Computer Engineering I, Physics, Chemistry,
+                Electrical Engineering, Mechanics, Introduction to Professional Engineering, Experimental Methods, Engineering Design I (Drawing and CAD), Engineering Design II.</p>
+
+    </ul>
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/lightbox.js"></script>
+
+<script>
+</script>
+
+
+</html>
