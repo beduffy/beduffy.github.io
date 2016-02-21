@@ -9,7 +9,12 @@
 <li>Add more elements of stuff from a cv? </li>
 <li>Add video without youtube or find out how?</li>
 </ul>
+
+
 <!-- TODO add more elements of stuff from a cv?-->
+
+Do year in review.
+Add simple networking and threading in C++, Java, C ?
 
     <!--TODO MYSQL DATABASE PROJECT ENTITY RELATIONSHIP, FUNCTIONAL DEPENDANCY, CONSTRAINTS, TRIGGERS, SECURITY.-->
     <!--TODO FINAL COMPUTER VISION ASSIGNment. abandoned and removed objects-->

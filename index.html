@@ -33,8 +33,14 @@
         /*text-align: center;*/
         color: #CEF0D4; font-family: 'Rouge Script', cursive; font-size: 50px; font-weight: normal; line-height: 48px; margin: 0 0 50px; text-align: center; text-shadow: 1px 1px 2px #082b34;
         /*font-family: 'Helvetica Neue', sans-serif; font-size: 50px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center;*/
+        transition: opacity .20s ease-in-out;
+       -moz-transition: opacity .20s ease-in-out;
+       -webkit-transition: opacity .20s ease-in-out;
     }
 
+    .time-period:hover {
+        opacity: 0.5;
+    }
 
     .period-2016 {
         color: dodgerblue;
@@ -84,6 +90,46 @@
     iframe {
         display: block;
         margin: 7px;
+    }
+
+    body {
+        animation: fadein 3s;
+        -moz-animation: fadein 3s; /* Firefox */
+        -webkit-animation: fadein 3s; /* Safari and Chrome */
+        -o-animation: fadein 3s; /* Opera */
+    }
+
+    @keyframes fadein {
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
+        }
+    }
+    @-moz-keyframes fadein { /* Firefox */
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
+        }
+    }
+    @-webkit-keyframes fadein { /* Safari and Chrome */
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
+        }
+    }
+    @-o-keyframes fadein { /* Opera */
+        from {
+            opacity:0;
+        }
+        to {
+            opacity: 1;
+        }
     }
 </style>
 <script>
