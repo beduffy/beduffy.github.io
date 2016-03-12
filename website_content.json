@@ -55,15 +55,15 @@
 			  "content": {
 				  "time_period": "Year in Review:",
 				  "list_items": [
-					"<b>Languages used for the first time:</b> Python, HTML, CSS, JavaScript, JSON, SQL. <br> <br>",
+					"<b>Languages used for the first time:</b> Python, HTML, CSS, JavaScript, JSON, SQL, NoSQL. <br> <br>",
 
 					  "<b>Languages used again:</b> C++, Java, XML. <br><br>",
 
-					  "<b>Libraries/frameworks/APIs used for the first time:</b><br>AI: <span style=\"color: green;\">OpenCV, Caffe, numpy, scipy, matlobplot.</span> <br>Graphics/Visualisation/Game Programming:<span style=\"color: orangered;\"> GLFW, GLUT, SOIL, FreeType, Assimp, LibGDX, D3.js.</span><br>Web Development: <span style=\"color: cadetblue;\">Bootstrap, jQuery, D3.js, Google App Engine, webapp2, Google Maps API, Leaflet JS, Jinja2 templating, SVG, AJAX.</span> <br> </b> <br>",
+					  "<b>Libraries/frameworks/APIs used for the first time:</b><br>AI: <span style=\"color: green;\">OpenCV, Caffe, numpy, scipy, matlobplot.</span> <br>Graphics/Visualisation/Game Programming:<span style=\"color: orangered;\"> GLFW, GLUT, SOIL, FreeType, Assimp, LibGDX, D3.js.</span><br>Web Development: <span style=\"color: cadetblue;\">Bootstrap, jQuery, D3.js, Google App Engine, app engine datastore, webapp2, Google Maps API, Leaflet JS, Jinja2 templating, SVG, AJAX.</span> <br> </b> <br>",
 
 					  "<b>Libraries/frameworks/APIs used again: </b>OpenGL, Git.<br><br>",
 
-					  "<b>Quick summary and other highlights:</b> I learned web development and a bit of neural networks for the first time."
+					  "<b>Quick summary and other highlights:</b> I learned web development and a bit of neural networks for the first time. I got my 4th scholarship in my advanced level 2 grade exam in RIAM for classical guitar."
 
 				  ],
 				  "videos": [],
@@ -75,6 +75,7 @@
 				  "time_period": "December",
 				  "list_items": [
 					  "<h2><b>Created this website.</b></h2>I found out that Github hosted free static webpages and decided to create one. The reasons I did this are: <ol><li>To have a place where I can document or autobiograph my life when it's about my two main passions: Music and Programming. <br>It encourages me to get more done because other people can now see what I'm doing and it motivates me when I see how much I have achieved.</li><li>I can use this website as my professional portfolio and I can mention things here that I wouldn't normally put on my CV (I don't think many employers care that you did 10 tutorials in some topic).</li><li>I can practice a bit of my web development skills here (Javascript, HTML, CSS, etc).</li><li>I can eventually use this web page for simple games and other visualisations. A game displayed here would effectively combine all 3 of my main specialisations above, e.g. if the game contains <span style=\"color: green;\">AI</span>, <span style=\"color: orangered;\">Graphics</span> and of course <span style=\"color: cadetblue;\">Web technologies</span> to display it here.</li></ol><br>",
+					  "I finished my final Computer Vision assignment. ",
 					  "Finished a 3D tank game I made for my 4th year College Computer Graphics module using OpenGL and C++. Some other libraries I used were SOIL for textures, FreeType for text rendering, glm for maths and Assimp for model importing. I wanted to add much more features in the end like AI (boids), better texture mapping, better level generation, better collision, normal mapping etc. But in the end I ran out of time and it was only worth 10% of the module so I was almost getting full marks anyway. The list of things I implemented: <ul><li>Lighting (point lights, directional lights and spot lights).</li><li>Simple AI.</li><li>Stealth mode for the player tank. Alpha blending is used to show that stealth mode is activated and the enemy tanks can't see you.</li><li>Hierarchical models. The tank wheels and the tank turret.</li><li>Texture mapping for the level.</li><li>Models I created in Blender. The tank, the level and the bullets.</li><li>Text rendering.</li><li>Collision detection.</li><li>Particles for both the tank's boosters and enemy explosions.</li><li>A few more small things.</li>"
 				  ],
 				  "videos": ["http:\/\/www.youtube.com/embed/P-e0a_SwSlw"],
@@ -85,13 +86,19 @@
 			  "content": {
 				  "time_period": "November",
 				  "list_items": [
-					  "Computer Vision assignment. Transform picture of book on table and use template matching to find out what page it is.",
+					  "Computer Vision assignment. Projectively transform picture of book on table and use template matching to find out what page it is. Pictures below.",
 					  "A good amount of work done for my 4th year thesis on Video Understanding. Started using Caffe deep learning library using Linux, Python (numpy, matplotlib, OpenCV and more).",
 					  "Read a lot about the theory of neural networks. Convolution, Recurrent Neural Nets, Backpropagation etc.",
 					  "Learned SQL for my Information Management module.",
-					  "10+ (<a href=\"http:\/\/www.learnopengl.com\" >learnopengl.com</a>tutorials.", "Began to learn how to use blender modelling software."],
+					  "I finished the 6th Computer Graphics assignment which was just the beginnings of my tank game above. Topics covered were texturing, Phong lighting and interactive camera.",
+					  "10+ (<a href=\"http:\/\/www.learnopengl.com\" >learnopengl.com</a>) tutorials.", "Began to learn how to use blender modelling software."],
 				  "videos": [],
-				  "pictures": []
+				  "pictures": [{"location": "assets/BookView05.JPG", "title": "Computer Vision page assignment. What page is the book on?"},
+				  {"location": "assets/BookView05Binary.png", "title": "Computer Vision page assignment. Binary thresholded to find page pixels."},
+				  {"location": "assets/BookView05Backproject.png", "title": "Computer Vision page assignment. Backproject blue onto page pixels to find blue corner points of page."},
+				  {"location": "assets/BookView05Transformed.png", "title": "Computer Vision page assignment. Use projective transformation to transform view of page."},
+				  {"location": "assets/BookView05MatchFound.png", "title": "Computer Vision page assignment. Use template matching to find closest match out of 13 pages."},
+				  {"location": "assets/BookviewResults.png", "title": "Computer Vision page assignment. Results of assignment."}]
 			  }
 		  },
 		  {
@@ -100,10 +107,14 @@
 				  "list_items": [
 					  "Began 4th year Computer Engineering in TCD. My 1st semester modules were: <ul> <li>Computer Graphics. 3D objects, transformations, textures, camera views, matrices, lighting etc. Got a nice head start on this one from all my gaming side projects.</li> <li>Computer Vision. Binary vision, histograms, edge detection, video, features, recognition etc.</li><li>Computer Architecture. Assembly IA32, RISC-I assembly, pipelines, caches, virtual memory, multiprocessing.</li><li>Information Management. Relational Databases, Relational algebra, SQL, NoSQL etc.</li><li>Mobile Communications. 2G, 3G, 4G, 5G, and all other wireless network technologies.</li><li>Engineering Management. Project management, project planning and project feasibility and evaluation. Team dynamics etc.</li></ul>",
 				  "Chose my 4th year thesis/project in 'Video Understanding'. This project seems like it could be way out of league for me as it could be a project for a PhD or for all of Google, Microsoft and Facebook combined but I have a plan for how to do it with Neural Networks and limit the scope so it is possible. And I've learned that choosing to do things that seem too difficult or seem impossible is the best way to improve at anything. One hobby of mine is reading about all the new things that Neural Networks are getting good at (seeing, hearing, understanding etc).",
-				  "Computer Vision glue bottle label assignment. Which glue bottles have labels and which don't. Picture soon.",
+				  "Computer Vision glue bottle label assignment. Which glue bottles have labels and which don't. Techniques used were: histograms, grayscaling and simple statistics. Pictures below.",
+				  "I finished the first 4 computer Graphics assignments. Topics covered were OpenGL pipeline, transformations, viewing (model, view and projection matrices), Hierarchy (relative movement with matrices e.g. body to shoulder to arm to hand to fingers).",
 				  "10+ (<a href=\"http:\/\/www.learnopengl.com\" >learnopengl.com</a>) tutorials."],
 				  "videos": [],
-				  "pictures": []
+				  "pictures": [{"location": "assets/glue1.jpg", "title": "Computer Vision glue bottle assignment. Is there a label on the bottle?"},
+				  {"location": "assets/glue2.png", "title": "Computer Vision glue bottle assignment. Turn to grayscale and create a histogram of colours."},
+				  {"location": "assets/glue4.png", "title": "Computer Vision glue bottle assignment. If the histogram has low standard deviation then there is no label."},
+					  {"location": "assets/glue3.png", "title": "Computer Vision glue bottle assignment. If the histogram has low standard deviation then there is no label."}]
 			  }
 		  },
 		  {
@@ -147,7 +158,7 @@
 
 					  "<b>Languages used again:</b> C++. <br><br>",
 
-					  "<b>Libraries/frameworks/APIs used for the first time:</b><br>AI: <span style=\"color: green;\"></span> <br>Graphics/Visualisation/Game Programming:<span style=\"color: orangered;\"> DirectX, OpenGL ES, </span><br>Web Development: <span style=\"color: cadetblue;\"></span> <br> Other: Git<br><br>",
+					  "<b>Libraries/frameworks/APIs used for the first time:</b><br>AI: <span style=\"color: green;\"></span> <br>Graphics/Visualisation/Game Programming:<span style=\"color: orangered;\"> DirectX, OpenGL ES, </span><br>Web Development: <span style=\"color: cadetblue;\"></span> <br> Other: Git, Android. <br><br>",
 
 					   "<b>Quick summary and other highlights:</b> I learned how to 'actually' program meaning that for the first time I was actually solving real problems and creating my own programs. Finishing my own games taught me a lot."
 

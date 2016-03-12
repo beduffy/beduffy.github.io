@@ -16,6 +16,8 @@
         padding: 1px;
         /*margin:auto;*/
         /*display:block;*/
+        /*height: 150px; fixes height problems but has aspect ratio problem
+        padding: 3px;*/
     }
 
     a.lightboxImage {
@@ -232,6 +234,10 @@
             }
         }).error(function() { alert("error"); });
 
+
+        lightbox.option({
+          'wrapAround': true
+        });
         // TODO Is code reaching here?
 //        $(".time-period").click(function() {
 //            console.log(this);
