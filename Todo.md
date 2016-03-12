@@ -10,6 +10,7 @@
 <li>Add video without youtube or find out how?</li>
 </ul>
 
+Create a monthly calender slidedown thingy to easily navigate between posts.
 
 <!-- TODO add more elements of stuff from a cv?-->
 

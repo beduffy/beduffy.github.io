@@ -9,14 +9,38 @@
 	"years": [
 	{
 		"year": 2016,
-		"time_periods": [{
-
+		"time_periods": [
+		{
+			"content": {
+				"time_period": "March",
+				"list_items": [
+					"Finished my first Augmented Reality assignment worth half the module. Was a very difficult but rewarding experience. OpenCV was used to calculate where the camera was in relation to the chessboard marker and how it was orientated. With that information, it's possible to fill in the view matrix required by OpenGL to display the cube so that when the picture changes, so does the view of the cube. I got it running in realtime with my webcam. There was a lot of matrix math involved. Pictures are below.",
+					"I learned UML modelling (class diagrams) in preparation for an interview."
+				],
+				"videos": [],
+				"pictures": [{"location": "assets/ar1.png", "title": "First Augmented Reality assignment"},
+				{"location": "assets/ar2.png", "title": "First Augmented Reality assignment"}]
+			}
+		},
+		{
+			"content": {
+				"time_period": "February",
+				"list_items": [
+					"Finished watching the last 7 lecture videos from Stanford's 'CS231n: Convolutional Neural Networks for Visual Recognition' class.  <br><b>Topics covered were:</b> ConvNets for spatial localisation, Object Detection, Understanding and visualizing Convolutional Neural Networks, Backprop into image: Visualizations, deep dream, artistic style transfer, Adversarial fooling examples, Recurrent Neural Networks (RNN), Long Short Term Memory (LSTM), RNN language models, Image captioning, Training ConvNets in practice, Data augmentation, transfer learning, Distributed training, CPU/GPU bottlenecks, Efficient convolutions, Overview of Caffe/Torch/Theano/TensorFlow, Segmentation, Soft attention models, Spatial transformer networks, ConvNets for videos, ConvNets in full-stack agents, Reinforcement Learning overview, Deep Q Learning for ATARI game playing",
+					"I got pre-trained models for Object Detection and Scene Classification working for my 4th year project.",
+					"Did a little bit of work helping my dad to create an E-learning web app for my cousin. This project used NodeJS, MongoDB, Express, jQuery and much more."
+				],
+				"videos": [],
+				"pictures": []
+			}
+		},
+		{
 			"content": {
 				"time_period": "January",
 				"list_items": [
 					"Finished my 4th year semester 1 exams. 4 went well, one went OK but I won't know for sure till June.",
 					"Solved 9 <a href=\"https://www.hackerrank.com\">HackerRank</a> problems in preparation for a few job interviews I was going for.",
-					"Started following along with Stanford's 'CS231n: Convolutional Neural Networks for Visual Recognition' class <a href=\"http://cs231n.stanford.edu/syllabus.html\">(CS231n syllabus)</a>. This year they are releasing the recorded lectures and I watched the first 7. All the notes and assignments are online too and I read some of these too. I did this because it will help my thesis in Video Understanding which will use neural networks.",
+					"Started following along with Stanford's 'CS231n: Convolutional Neural Networks for Visual Recognition' class <a href=\"http://cs231n.stanford.edu/syllabus.html\">(CS231n syllabus)</a>. This year they are releasing the recorded lectures and I watched the first 7. All the notes and assignments are online too and I read some of these too. I did this because it will help my thesis in Video Understanding which will use neural networks. <br><b>Topics covered were:</b> k-nearest neighbours, linear classification (SVMs), Optimization, Stochastic gradient descent, Backpropagation, activation functions, weight initialization, gradient flow, batch normalization, babysitting the learning process, hyperparameter optimization, parameter updates, ensembles, dropout, Convolutional Neural Networks: architectures, convolution / pooling layers, Case studies of ImageNet challenge winning ConvNets.",
 					"I began 2nd Semester 4th year (final semester) Computer Engineering. The modules I am taking are: <ul><li>Augmented Reality. Perfect mix of Computer Vision and Computer Graphics from last semester.</li><li>Knowledge Engineering. XML, XPath, XSLT, PageRank, Onthologies.</li><li>Security of Networks and Distributed Systems. Very valuable knowledge considering the amount of security flaws and attacks in todays systems.</li><li>Video Understanding. I'm of course continuing with my thesis but I have to do most of the work this semester.</li></ul>"
 				],
 				"videos": [],
@@ -29,9 +53,28 @@
       "time_periods": [
 		  {
 			  "content": {
+				  "time_period": "Year in Review:",
+				  "list_items": [
+					"<b>Languages used for the first time:</b> Python, HTML, CSS, JavaScript, JSON, SQL. <br> <br>",
+
+					  "<b>Languages used again:</b> C++, Java, XML. <br><br>",
+
+					  "<b>Libraries/frameworks/APIs used for the first time:</b><br>AI: <span style=\"color: green;\">OpenCV, Caffe, numpy, scipy, matlobplot.</span> <br>Graphics/Visualisation/Game Programming:<span style=\"color: orangered;\"> GLFW, GLUT, SOIL, FreeType, Assimp, LibGDX, D3.js.</span><br>Web Development: <span style=\"color: cadetblue;\">Bootstrap, jQuery, D3.js, Google App Engine, webapp2, Google Maps API, Leaflet JS, Jinja2 templating, SVG, AJAX.</span> <br> </b> <br>",
+
+					  "<b>Libraries/frameworks/APIs used again: </b>OpenGL, Git.<br><br>",
+
+					  "<b>Quick summary and other highlights:</b> I learned web development and a bit of neural networks for the first time."
+
+				  ],
+				  "videos": [],
+				  "pictures": []
+			  }
+          },
+		  {
+			  "content": {
 				  "time_period": "December",
 				  "list_items": [
-					  "<h2><b>Created this website.</b></h2>Found out that Github hosted free static webpages and decided to create one so I could have a place to put up all the things I have worked on and that I am working on.It also encourages me to get more done because other people can now see what I'm doing and it's a great place for me to practice my HTML, CSS and JavaScript.This website is essentially my portfolio. I can mention things here that I wouldn't normally put on my CV (what employer cares that you did 10 tutorials in whatever topic?).I can also eventually use this web page for simple games and other visualisations.A game displayed here would effectively combine all 3 of my main specialisations above, e.g. if the game contains <span style=\"color: green;\">AI</span>, <span style=\"color: orangered;\">Graphics</span> and of course <span style=\"color: cadetblue;\">Web technologies</span> to display it here.",
+					  "<h2><b>Created this website.</b></h2>I found out that Github hosted free static webpages and decided to create one. The reasons I did this are: <ol><li>To have a place where I can document or autobiograph my life when it's about my two main passions: Music and Programming. <br>It encourages me to get more done because other people can now see what I'm doing and it motivates me when I see how much I have achieved.</li><li>I can use this website as my professional portfolio and I can mention things here that I wouldn't normally put on my CV (I don't think many employers care that you did 10 tutorials in some topic).</li><li>I can practice a bit of my web development skills here (Javascript, HTML, CSS, etc).</li><li>I can eventually use this web page for simple games and other visualisations. A game displayed here would effectively combine all 3 of my main specialisations above, e.g. if the game contains <span style=\"color: green;\">AI</span>, <span style=\"color: orangered;\">Graphics</span> and of course <span style=\"color: cadetblue;\">Web technologies</span> to display it here.</li></ol><br>",
 					  "Finished a 3D tank game I made for my 4th year College Computer Graphics module using OpenGL and C++. Some other libraries I used were SOIL for textures, FreeType for text rendering, glm for maths and Assimp for model importing. I wanted to add much more features in the end like AI (boids), better texture mapping, better level generation, better collision, normal mapping etc. But in the end I ran out of time and it was only worth 10% of the module so I was almost getting full marks anyway. The list of things I implemented: <ul><li>Lighting (point lights, directional lights and spot lights).</li><li>Simple AI.</li><li>Stealth mode for the player tank. Alpha blending is used to show that stealth mode is activated and the enemy tanks can't see you.</li><li>Hierarchical models. The tank wheels and the tank turret.</li><li>Texture mapping for the level.</li><li>Models I created in Blender. The tank, the level and the bullets.</li><li>Text rendering.</li><li>Collision detection.</li><li>Particles for both the tank's boosters and enemy explosions.</li><li>A few more small things.</li>"
 				  ],
 				  "videos": ["http:\/\/www.youtube.com/embed/P-e0a_SwSlw"],
@@ -96,6 +139,23 @@
     {
 		"year": 2014,
 		"time_periods": [
+			{
+			  "content": {
+				  "time_period": "Year in Review:",
+				  "list_items": [
+					"<b>Languages used for the first time:</b> Java, XML.<br> <br>",
+
+					  "<b>Languages used again:</b> C++. <br><br>",
+
+					  "<b>Libraries/frameworks/APIs used for the first time:</b><br>AI: <span style=\"color: green;\"></span> <br>Graphics/Visualisation/Game Programming:<span style=\"color: orangered;\"> DirectX, OpenGL ES, </span><br>Web Development: <span style=\"color: cadetblue;\"></span> <br> Other: Git<br><br>",
+
+					   "<b>Quick summary and other highlights:</b> I learned how to 'actually' program meaning that for the first time I was actually solving real problems and creating my own programs. Finishing my own games taught me a lot."
+
+				  ],
+				  "videos": [],
+				  "pictures": []
+			  }
+          },
 			{
 				"content": {
 					"time_period": "Winter",
