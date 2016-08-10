@@ -8,85 +8,31 @@
 
 <style>
     body {
-        background-color: azure;
-    }
-
-    .blog-image {
-        max-width:20%;
-        max-height:100%;
-        padding: 5px;
-        /*margin:auto;*/
-        /*display:block;*/
-        /*height: 150px; fixes height problems but has aspect ratio problem
-        padding: 3px;*/
-    }
-
-    a.lightboxImage {
-        width: 100px
-        padding: 1em;
-        transition: opacity .25s ease-in-out;
-        -moz-transition: opacity .25s ease-in-out;
-        -webkit-transition: opacity .25s ease-in-out;
-    }
-
-    a.lightboxImage:hover {
-        opacity: 0.5;
-    }
-
-    .time-period {
-        color: #CEF0D4; font-family: 'Rouge Script', cursive; font-size: 50px; font-weight: normal; line-height: 48px; margin: 0 0 50px; text-align: center; text-shadow: 1px 1px 2px #082b34;
-        transition: opacity .10s ease-in-out;
-        -moz-transition: opacity .10s ease-in-out;
-        -webkit-transition: opacity .10s ease-in-out;
-    }
-
-    .time-period:hover {
-        opacity: 0.5;
-    }
-
-    .period-2016 {
-        color: dodgerblue;
-    }
-
-    .period-2015 {
-        color: darkblue;
-    }
-
-    .period-2014 {
-        color: coral;
     }
 
     #container {
         width: auto;
-        background-color: #ffcc33;
         margin: auto;
     }
 
     #first {
-        width: 33%;
-        float: left;
-        height: 250px;
         color: orangered;
     }
+    #first:hover {
+        background:rgba(255,165,0, 0.3);
+    }
     #second {
-        width: 33%;
-        float: left;
-        height: 250px;
         color: green;
     }
+    /*todo make animation to change colour*/
+    #second:hover {
+        background:rgba(0,255,0, 0.3);
+    }
     #third {
-        /*clear: both;*/
-        width: 33%;
-        float: left;
-        height: 250px;
         color: cadetblue;
     }
-
-    #widi {
-        text-align: center;
-        /*color: #ffffff; font-family: 'Lato', sans-serif; font-size: 54px; font-weight: 300; line-height: 58px; margin: 0 0 58px;*/
-        /*color: #7c795d; font-family: 'Trocchi', serif; font-size: 45px; font-weight: normal; line-height: 48px; margin: 0;*/
-        color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 50px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center;
+    #third:hover {
+        background: rgba(95,158,160,0.3);
     }
 
     iframe {
@@ -133,6 +79,36 @@
             opacity: 1;
         }
     }
+
+    .hover-section:hover {
+        background-color: #f5f5f5;;
+    }
+
+    .programming-langs-header {
+        text-align: center;
+    }
+
+    .big-header {
+        text-align: center;
+    }
+
+    .frameworks-header {
+        text-align: center;
+    }
+
+    hr {
+        /*border: 0;*/
+    }
+
+    #operating-systems {
+        float: right;
+        width: 50%;
+    }
+
+    #version-control {
+        float: left;
+        width: 50%;
+    }
 </style>
 <script async="" src="//www.google-analytics.com/analytics.js"></script><script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -147,552 +123,216 @@
 </head>
 
 <body>
-
     <h1 style="text-align: center; color: #4c627c; font-family: 'Trocchi', serif; font-size: 45px; font-weight: normal; line-height: 48px; margin: 0;">Ben Duffy's adventures in Programming and Music.</h1>
 
+    <!-- todo create new tab for music and blog and etc -->
     <div id="container">
-        <div id="first">
-            <h2 style="text-align: left;">Graphics, Visualisation and Game Programming</h2>
+        <div class="hover-section">
+            <hr>
+            <h3>Links</h3>
             <ul>
-                <li>LibGDX</li>
-                <li>Phaser.js</li>
-                <li>DirectX</li>
-                <li>OpenGL</li>
-                <li>OpenGL ES</li>
-                <li>WebGL</li>
-                <li>GLFW</li>
+                <!-- todo make them share a few lines together.-->
+                <li><a href="https://github.com/beduffy">Github</a></li>
+                <li><a href="https://www.youtube.com/channel/UCuhLrh5bZ_Tyvugtvi9upQA">Youtube</a></li>
+                <li><a href="https://twitter.com/beduffy1">Twitter</a></li>
+                <li><a href="https://ie.linkedin.com/in/ben-duffy-29b779a6">LinkedIn</a></li>
+                <!--<li><a href="">Twitter</a></li>-->
+            <li><a href="/blog.html" style="font-size: x-large;">My previous website page</a> (I will eventually include it's contents here somewhere properly. At the moment it contains a lot of pictures, videos and writing)</li>
             </ul>
+            <hr>
         </div>
 
-        <div id="second">
-            <h2 style="text-align: center;">Artificial Intelligence</h2>
+        <!-- -------------------------------------------------------------------------------------------- -->
+        <!-- ---------------------------Main things currently doing section ----------------------------- -->
+        <!-- -------------------------------------------------------------------------------------------- -->
+        <h1 class="big-header">Main things I am currently doing:</h1>
+        <div class="hover-section">
+            <hr>
             <ul>
-                <li>Machine Learning</li>
-                <li>Neural Networks</li>
-                <li>Board game playing AI</li>
-                <li>AI in video games</li>
-                <li>Computer Vision with OpenCV</li>
-                <!--<li>Ontologies.</li>-->
+                <li>Working as a Software Intern at the company Intuition Publishing Ltd. . Technologies being used are C#, ASP.NET,
+                    JavaScript, NodeJS, Express, Angular and much more.
+                </li>
+                <!-- todo make that hour update automatically. Create my own database?-->
+                <li>Creating and maintaining the user facing side and the admin facing side of <a
+                        href="http://themtank.org">http://themtank.org</a>. Technologies used: NodeJs, Express, jQuery,
+                    MongoDB and much more.
+                </li>
+                <li>Reading everything online about AI and Machine Learning</li>
+                <li>Learning Saxophone for 70 hours so far and counting</li>
+                <li>Still practicing guitar and piano regularly and every now and then practicing jazz with the band</li>
+                <li>Attempting, succeeding and failing to do 15 other things usually each week which includes: Exercise, Updating this website, Coursera Machine Learning course and record new music videos</li>
             </ul>
+            <hr>
         </div>
 
-        <div id="third">
-            <h2 style="text-align: right;">Web Development</h2>
-            <ul style="text-align: right;">
-                <li>jQuery</li>
-                <li>Bootstrap</li>
-                <li>Google Maps API</li>
-                <li>Google App Engine</li>
-                <li>D3.js</li>
-                <li>Leaflet JS</li>
-                <li>WebGL</li>
-            </ul>
+        <!-- -------------------------------------------------------------------------------------------- -->
+        <!-- ---------------------------------Programming Languages section ----------------------------- -->
+        <!-- -------------------------------------------------------------------------------------------- -->
+        <div class="programming-langs">
+            <h1 class="programming-langs-header big-header">Programming Languages</h1>
+
+            <div class="hover-section">
+                <hr>
+                <h2>Main used languages in order of preference/frequency used</h2>
+                <ul>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>C++</li>
+                    <li>Java</li>
+                    <li>C#</li>
+                    <li>SQL</li>
+                    <li>Matlab/Octave</li>
+                    <li>Assembly (ARM and IA32)</li>
+                </ul>
+                <hr>
+            </div>
+            <div class="hover-section">
+                <hr>
+                <h2>Other "Programming Languages" used a lot</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>LESS/CSS</li>
+                    <li>JSON</li>
+                    <li>XML (XPath, XSL)</li>
+                </ul>
+                <hr>
+            </div>
+
         </div>
+
+        <!-- -------------------------------------------------------------------------------------------- -->
+        <!-- -------------------------------------Miscellaneous section --------------------------------- -->
+        <!-- -------------------------------------------------------------------------------------------- -->
+        <h1 class="big-header">Miscellaneous skills</h1>
+        <div class="hover-section" id="ides">
+            <hr>
+            <h2>IDEs</h2>
+            <ul>
+                <li>Visual Studio, Eclipse, Android Studio, WebStorm, PyCharm, IntelliJ, IDLE Python 3, Arduino, Keli uVision 4.</li>
+            </ul>
+            <hr>
+        </div>
+
+        <div class="hover-section" style="height: 150px;">
+            <hr>
+            <div class="hover-section-nah?" id="version-control">
+                <h2>Version Control</h2>
+                <ul>
+                    <li>Git</li>
+                    <li>SVN</li>
+                </ul>
+            </div>
+
+            <div class="hover-section-nah" id="operating-systems">
+                <h2>Operating Systems</h2>
+                <ul>
+                    <li>Windows</li>
+                    <li>Linux Ubuntu</li>
+                    <li>OSX</li>
+                </ul>
+            </div>
+            <!--<hr>-->
+        </div>
+
+        <div class="hover-section">
+            <hr>
+            <h2>Other</h2>
+            <ul>
+                <li>Agile</li>
+                <li>Design Patterns</li>
+                <li>Testing (Unit, Integration)</li>
+                <li>Android</li>
+                <li>Microservices</li>
+                <li>Continous Delivery/integration</li>
+                <!-- todo some of these can go in web development or new sections-->
+            </ul>
+            <hr>
+        </div>
+
+        <!-- -------------------------------------------------------------------------------------------- -->
+        <!-- -------------------------------------Framework section ------------------------------------- -->
+        <!-- -------------------------------------------------------------------------------------------- -->
+        <div class="frameworks">
+            <h1 class="frameworks-header">Frameworks/Areas of study/Areas I'm interested in.</h1>
+
+            <div id="first">
+                <hr>
+                <h2>Graphics, Visualisation and Game Programming</h2>
+
+                <div>
+                    Have made games in Java, C++ and JavaScript. Have used D3 for visualisation and I like to my nice colour and patterns.
+                </div>
+                <h3>Frameworks/Engines/Libraries</h3>
+                <ul>
+                    <li>LibGDX</li>
+                    <li>Phaser.js</li>
+                    <li>DirectX</li>
+                    <li>OpenGL</li>
+                    <li>OpenGL ES</li>
+                    <li>WebGL</li>
+                    <li>GLFW</li>
+                </ul>
+                <hr>
+            </div>
+
+            <div id="second">
+                <hr>
+                <h2>Artificial Intelligence</h2>
+
+                <div>
+                    Mainly interested in Machine Learning and Deep Learning with applications to Computer Vision and Natural Language Processing. But also interested in Board game playing AI and AI in videos games.
+                    Reinforcement Learning with games is an area I intend to focus on because it is a mix of all my of my favourite areas. Python is my favourite language to use for AI.
+                </div>
+                <h3>Frameworks/Libraries</h3>
+                <ul>
+                      <!-- todo add special e to caffe-->
+                    <li>Caffe</li>
+                    <li>Numpy</li>
+                    <li>Matlab/Octave</li>
+                    <li>OpenCV</li>
+                </ul>
+                <hr>
+            </div>
+
+            <div id="third">
+                <hr>
+                <h2>Web Development</h2>
+
+                <h3>Clent Side Frameworks/Libraries</h3>
+                <ul>
+                    <li>jQuery</li>
+                    <li>Bootstrap</li>
+                    <li>Angular JS</li>
+                    <li>Google Maps API</li>
+                    <li>D3.js</li>
+                    <li>Leaflet JS</li>
+                    <li>WebGL</li>
+                    <li>LESS</li>
+                </ul>
+                <h3>Server side Frameworks/Libraries</h3>
+                <ul>
+                    <li>NodeJS</li>
+                    <li>Express</li>
+                    <li>Google App Engine (using Python and webapp2)</li>
+                    <li>Python Flask</li>
+                    <li>Socket.io</li>
+                    <li>Grunt</li>
+                    <li>Azure</li>
+                </ul>
+                <h3>General Web skills</h3>
+                <ul>
+                    <li>Security (SQL injection, Cross site scripting, etc)</li>
+                    <li>HTTP</li>
+                    <li>DNS</li>
+                    <li>Microservices</li>
+                </ul>
+                <hr>
+            </div>
+        </div>
+
+        <!--<div></div>-->
+
     </div>
-
-    <h1 id="widi">What I did in</h1>
-
-    <div id="blog">
-        <h4 class="time-period period-2016">June 2016</h4>
-        <ul>
-            <li>I started working as an intern in a company called Intuition. They specialise in E-learning for the finances.
-                Some of the skills I will learn are: Continuous Delivery, C#, XML, Android, NodeJS, MongoDB, Cassandra and more.</li>
-        </ul>
-
-        <h4 class="time-period period-2016">May 2016</h4>
-        <ul>
-            <li>I started to learn the tenor Saxophone. I began by learning many scale exercises and learning popular songs like Baker Street and Careless Whisper
-                and many other simple enough songs. I feel already pretty confident with improvising over some songs with the band like Autumn Leaves, Cantaloupe Island and others.
-                But there is a lot of work to be done with tone
-                and being able to breath for long enough. I hope to have a video of me playing it up soon.</li>
-            <li>I finished my final year doing Computer Engineering in Trinity College Dublin. It was a difficult 4 years but I'm glad to be done. </li>
-            <li>I completed the first 8 WebGL JavaScript tutorials at <a href="http://learningwebgl.com/">learningwebgl.com</a>. The hope is to eventually make a few games and display them here.</li>
-            <li>I enrolled in Andrew Ng's Machine Learning Coursera class and I am enjoying it so far. Topics covered are: <br> Linear and multivariate Regression, Logistic Regression,
-                Neural Networks, SVMs, Applying Machine Learning at scale, clustering algorithms and more.</li>
-        </ul>
-
-        <h4 class="time-period period-2016">April 2016</h4>
-        <ul>
-            <li>
-            </li>
-            <li>I finished the writing of my 4th year thesis/project, titled "Video Understanding". In the end, I ended up rushing and wishing I had more time but I still am very proud of it.
-                Pictures soon.</li>
-            <li>Finished both my Security Assignments and did the exam in the module. A lot was learned about the top security flaws in most web applications
-                e.g. Session Management, SQL Injection, Cross-site Scripting, DDoS attacks etc.</li>
-            <li>I finished the second and final Augmented Reality assignment.
-                The task was panorama stitching and extra marks were achieved by having the program run on Android.</li>
-        </ul>
-
-        <h4 class="time-period period-2016">March 2016</h4>
-        <ul>
-            <li>Finished my first Augmented Reality assignment worth half the module. It was a very difficult but
-                rewarding experience. OpenCV was used to calculate where the camera was in relation to the chessboard
-                marker and how it was orientated. With that information, it's possible to fill in the view matrix
-                required by OpenGL to display the cube so that when the picture changes, so does the view of the cube. I
-                got it running in realtime with my webcam. There was a lot of matrix math involved. Pictures are below.
-            </li>
-            <li>I learned UML modelling (class diagrams) in preparation for an interview.</li>
-            <a class="lightboxImage" href="assets/ar1.png" data-lightbox="image-1"
-               data-title="First Augmented Reality assignment"><img class="blog-image" src="assets/ar1.png"></a><a
-                class="lightboxImage" href="assets/ar2.png" data-lightbox="image-1"
-                data-title="First Augmented Reality assignment"><img class="blog-image" src="assets/ar2.png"></a></ul>
-        <h4 class="time-period period-2016">February 2016</h4>
-        <ul>
-            <li>Finished watching the last 7 lecture videos from Stanford's 'CS231n: Convolutional Neural Networks for
-                Visual Recognition' class. <br><b>Topics covered were:</b> ConvNets for spatial localisation, Object
-                Detection, Understanding and visualizing Convolutional Neural Networks, Backprop into image:
-                Visualizations, deep dream, artistic style transfer, Adversarial fooling examples, Recurrent Neural
-                Networks (RNN), Long Short Term Memory (LSTM), RNN language models, Image captioning, Training ConvNets
-                in practice, Data augmentation, transfer learning, Distributed training, CPU/GPU bottlenecks, Efficient
-                convolutions, Overview of Caffe/Torch/Theano/TensorFlow, Segmentation, Soft attention models, Spatial
-                transformer networks, ConvNets for videos, unsupervised learning (Autoencoders, adverserial networks)
-            </li>
-            <li>I got pre-trained models for Object Detection and Scene Classification working for my 4th year
-                project.
-            </li>
-            <li>Did a little bit of work helping my dad to create an E-learning web app for my cousin. This project used
-                NodeJS, MongoDB, Express, jQuery and much more.
-            </li>
-        </ul>
-        <h4 class="time-period period-2016">January 2016</h4>
-        <ul>
-            <li>Finished my 4th year semester 1 exams. 4 went well, one went OK but I won't know for sure till June.
-            </li>
-            <li>Solved 9 <a href="https://www.hackerrank.com">HackerRank</a> problems in preparation for a few job
-                interviews I was going for.
-            </li>
-            <li>Started following along with Stanford's 'CS231n: Convolutional Neural Networks for Visual Recognition'
-                class <a href="http://cs231n.stanford.edu/syllabus.html">(CS231n syllabus)</a>. This year they are
-                releasing the recorded lectures and I watched the first 7. All the notes and assignments are online too
-                and I read some of these too. I did this because it will help my thesis in Video Understanding which
-                will use neural networks. <br><b>Topics covered were:</b> k-nearest neighbours, linear classification
-                (SVMs), Optimization, Stochastic gradient descent, Backpropagation, activation functions, weight
-                initialization, gradient flow, batch normalization, babysitting the learning process, hyperparameter
-                optimization, parameter updates, ensembles, dropout, Convolutional Neural Networks: architectures,
-                convolution / pooling layers, Case studies of ImageNet challenge winning ConvNets.
-            </li>
-            <li>I began 2nd Semester 4th year (final semester) Computer Engineering. The modules I am taking are:
-                <ul>
-                    <li>Augmented Reality. Perfect mix of Computer Vision and Computer Graphics from last semester.</li>
-                    <li>Knowledge Engineering. XML, XPath, XSLT, PageRank, Onthologies.</li>
-                    <li>Security of Networks and Distributed Systems. Very valuable knowledge considering the amount of
-                        security flaws and attacks in todays systems.
-                    </li>
-                    <li>Video Understanding. I'm of course continuing with my thesis but I have to do most of the work
-                        this semester.
-                    </li>
-                </ul>
-            </li>
-        </ul>
-        <h4 class="time-period period-2015">Year in Review: 2015</h4>
-        <ul>
-            <li><b>Languages used for the first time:</b> Python, HTML, CSS, JavaScript, JSON, SQL, NoSQL. <br> <br>
-            </li>
-            <li><b>Languages used again:</b> C++, Java, XML. <br><br></li>
-            <li><b>Libraries/frameworks/APIs used for the first time:</b><br>AI: <span style="color: green;">OpenCV, Caffe, numpy, scipy, matlobplot.</span>
-                <br>Graphics/Visualisation/Game Programming:<span style="color: orangered;"> GLFW, GLUT, SOIL, FreeType, Assimp, LibGDX, D3.js.</span><br>Web
-                Development: <span style="color: cadetblue;">Bootstrap, jQuery, D3.js, Google App Engine, app engine datastore, webapp2, Google Maps API, Leaflet JS, Jinja2 templating, SVG, AJAX.</span>
-                <br> <br></li>
-            <li><b>Libraries/frameworks/APIs used again: </b>OpenGL, Git.<br><br></li>
-            <li><b>Quick summary and other highlights:</b> I learned web development and a bit of neural networks for
-                the first time. I got my 4th scholarship in my advanced level 2 grade exam in RIAM for classical guitar.
-            </li>
-        </ul>
-        <h4 class="time-period period-2015">December 2015</h4>
-        <ul>
-            <li><h2><b>Created this website.</b></h2>I found out that Github hosted free static webpages and decided to
-                create one. The reasons I did this are:
-                <ol>
-                    <li>To have a place where I can document and autobiograph my life when it's about my two main
-                        passions: Music and Programming. <br>It encourages me to get more done because other people can
-                        now see what I'm doing and it motivates me when I see how much I have achieved.
-                    </li>
-                    <li>I can use this website as my professional portfolio and I can mention things here that I
-                        wouldn't normally put on my CV (I don't think many employers care that you did 10 tutorials in
-                        some topic).
-                    </li>
-                    <li>I can practice a bit of my web development skills here (Javascript, HTML, CSS, etc).</li>
-                    <li>I can eventually use this web page for simple games and other visualisations. A game displayed
-                        here would effectively combine all 3 of my main specialisations above, e.g. if the game contains
-                        <span style="color: green;">AI</span>, <span style="color: orangered;">Graphics</span> and of
-                        course <span style="color: cadetblue;">Web technologies</span> to display it here.
-                    </li>
-                </ol>
-                <br></li>
-            <li>I finished my final Computer Vision assignment. It was about detecting abandoned and removed objects
-                from video using OpenCV. The techniques used were: Median Backgrounds, dilation, eroding, opening,
-                difference images and binary thresholding. Some difficult to understand pictures below without the video
-                playing. One median background updates at a different rate than the other so that's why the bag is in
-                one image but not the second.
-            </li>
-            <li>I finished my SQL database project. This was quite sizable as it included designing the database first
-                with Entity Relationship diagrams, relational schema, functional dependency diagrams, normalisation. For
-                actually building it MySQL was used and constraints, triggers, security, views and much more had to be
-                implemented.
-            </li>
-            <li>Finished a 3D tank game (video below) I made for my 4th year College Computer Graphics module using
-                OpenGL and C++. Some other libraries I used were SOIL for textures, FreeType for text rendering, glm for
-                maths and Assimp for model importing. I wanted to add much more features in the end like AI (boids),
-                better texture mapping, better level generation, better collision, normal mapping etc. But in the end I
-                ran out of time and it was only worth 10% of the module so I was almost getting full marks anyway. The
-                list of things I implemented:
-                <ul>
-                    <li>Lighting (point lights, directional lights and spot lights).</li>
-                    <li>Simple AI.</li>
-                    <li>Stealth mode for the player tank. Alpha blending is used to show that stealth mode is activated
-                        and the enemy tanks can't see you.
-                    </li>
-                    <li>Hierarchical models. The tank wheels and the tank turret.</li>
-                    <li>Texture mapping for the level.</li>
-                    <li>Models I created in Blender. The tank, the level and the bullets.</li>
-                    <li>Text rendering.</li>
-                    <li>Collision detection.</li>
-                    <li>Particles for both the tank's boosters and enemy explosions.</li>
-                    <li>A few more small things.</li>
-                </ul>
-            </li>
-            <a class="lightboxImage" href="assets/abandoned1.png" data-lightbox="image-1"
-               data-title="Computer Vision detecting abandoned/removed objects assignment. Notice how the bag isn't in Median Background 1 but is in no. 2. The backgrounds update at different rates"><img
-                    class="blog-image" src="assets/abandoned1.png"></a><a class="lightboxImage"
-                                                                          href="assets/abandoned2.png"
-                                                                          data-lightbox="image-1"
-                                                                          data-title="Computer Vision detecting abandoned/removed objects assignment. Once the detection process is over, I work backwards to find out what frame the object was first seen and if it was abandoned or removed and then I find where it was."><img
-                class="blog-image" src="assets/abandoned2.png"></a>
-            <iframe width="560" height="315" src="http://www.youtube.com/embed/P-e0a_SwSlw?autoplay=0" frameborder="0"
-                    allowfullscreen=""></iframe>
-        </ul>
-        <h4 class="time-period period-2015">November 2015</h4>
-        <ul>
-            <li>Computer Vision assignment. Projectively transform picture of book on table and use template matching to
-                find out what page it is. Pictures below.
-            </li>
-            <li>A good amount of work done for my 4th year thesis on Video Understanding. Started using Caffe deep
-                learning library using Linux, Python (numpy, matplotlib, OpenCV and more).
-            </li>
-            <li>Read a lot about the theory of neural networks. Convolution, Recurrent Neural Nets, Backpropagation
-                etc.
-            </li>
-            <li>Learned SQL for my Information Management module.</li>
-            <li>I finished the 6th Computer Graphics assignment which was just the beginnings of my tank game above.
-                Topics covered were texturing, Phong lighting and interactive camera.
-            </li>
-            <li>10+ (<a href="http://www.learnopengl.com">learnopengl.com</a>) tutorials.</li>
-            <li>Began to learn how to use blender modelling software.</li>
-            <a class="lightboxImage" href="assets/BookView05.JPG" data-lightbox="image-1"
-               data-title="Computer Vision page assignment. What page is the book on?"><img class="blog-image"
-                                                                                            src="assets/BookView05.JPG"></a><a
-                class="lightboxImage" href="assets/BookView05Binary.png" data-lightbox="image-1"
-                data-title="Computer Vision page assignment. Binary thresholded to find page pixels."><img
-                class="blog-image" src="assets/BookView05Binary.png"></a><a class="lightboxImage"
-                                                                            href="assets/BookView05Backproject.png"
-                                                                            data-lightbox="image-1"
-                                                                            data-title="Computer Vision page assignment. Backproject blue onto page pixels to find blue corner points of page."><img
-                class="blog-image" src="assets/BookView05Backproject.png"></a><a class="lightboxImage"
-                                                                                 href="assets/BookView05Transformed.png"
-                                                                                 data-lightbox="image-1"
-                                                                                 data-title="Computer Vision page assignment. Use projective transformation to transform view of page."><img
-                class="blog-image" src="assets/BookView05Transformed.png"></a><a class="lightboxImage"
-                                                                                 href="assets/BookView05MatchFound.png"
-                                                                                 data-lightbox="image-1"
-                                                                                 data-title="Computer Vision page assignment. Use template matching to find closest match out of 13 pages."><img
-                class="blog-image" src="assets/BookView05MatchFound.png"></a><a class="lightboxImage"
-                                                                                href="assets/BookviewResults.png"
-                                                                                data-lightbox="image-1"
-                                                                                data-title="Computer Vision page assignment. Results of assignment."><img
-                class="blog-image" src="assets/BookviewResults.png"></a></ul>
-        <h4 class="time-period period-2015">September-October 2015</h4>
-        <ul>
-            <li>Began 4th year Computer Engineering in TCD. My 1st semester modules were:
-                <ul>
-                    <li>Computer Graphics. 3D objects, transformations, textures, camera views, matrices, lighting etc.
-                        Got a nice head start on this one from all my gaming side projects.
-                    </li>
-                    <li>Computer Vision. Binary vision, histograms, edge detection, video, features, recognition etc.
-                    </li>
-                    <li>Computer Architecture. Assembly IA32, RISC-I assembly, pipelines, caches, virtual memory,
-                        multiprocessing.
-                    </li>
-                    <li>Information Management. Relational Databases, Relational algebra, SQL, NoSQL etc.</li>
-                    <li>Mobile Communications. 2G, 3G, 4G, 5G, and all other wireless network technologies.</li>
-                    <li>Engineering Management. Project management, project planning and project feasibility and
-                        evaluation. Team dynamics etc.
-                    </li>
-                </ul>
-            </li>
-            <li>Chose my 4th year thesis/project in 'Video Understanding'. This project seems like it could be way out
-                of league for me as it could be a project for a PhD or for all of Google, Microsoft and Facebook
-                combined but I have a plan for how to do it with Neural Networks and limit the scope so it is possible.
-                And I've learned that choosing to do things that seem too difficult or seem impossible is the best way
-                to improve at anything. One hobby of mine is reading about all the new things that Neural Networks are
-                getting good at (seeing, hearing, understanding etc).
-            </li>
-            <li>Computer Vision glue bottle label assignment. Which glue bottles have labels and which don't. Techniques
-                used were: histograms, grayscaling and simple statistics. Pictures below.
-            </li>
-            <li>I finished the first 4 computer Graphics assignments. Topics covered were OpenGL pipeline,
-                transformations, viewing (model, view and projection matrices), Hierarchy (relative movement with
-                matrices e.g. body to shoulder to arm to hand to fingers).
-            </li>
-            <li>10+ (<a href="http://www.learnopengl.com">learnopengl.com</a>) tutorials.</li>
-            <a class="lightboxImage" href="assets/Glue1.jpg" data-lightbox="image-1"
-               data-title="Computer Vision glue bottle assignment. Is there a label on the bottle?"><img
-                    class="blog-image" src="assets/Glue1.jpg"></a><a class="lightboxImage" href="assets/Glue2.png"
-                                                                     data-lightbox="image-1"
-                                                                     data-title="Computer Vision glue bottle assignment. Turn to grayscale and create a histogram of colours."><img
-                class="blog-image" src="assets/Glue2.png"></a><a class="lightboxImage" href="assets/glue4.png"
-                                                                 data-lightbox="image-1"
-                                                                 data-title="Computer Vision glue bottle assignment. If the histogram has low standard deviation then there is no label."><img
-                class="blog-image" src="assets/glue4.png"></a><a class="lightboxImage" href="assets/Glue3.png"
-                                                                 data-lightbox="image-1"
-                                                                 data-title="Computer Vision glue bottle assignment. If the histogram has low standard deviation then there is no label."><img
-                class="blog-image" src="assets/Glue3.png"></a></ul>
-        <h4 class="time-period period-2015">Summer 2015</h4>
-        <ul>
-            <li>Learned Python, HTML, CSS, JavaScript, JSON languages and countless other libraries/frameworks.
-                Instantly took a liking to JavaScript and Python (my first interpreted languages) after the difficulty
-                of having to write C++ for so long. Learning them and comparing them really made me understand and
-                appreciate the idea of a programming language more.
-            </li>
-            <li>I got my first programming job at a startup called Pointy (<a
-                    href="http://www.pointy.com">www.pointy.com</a>).
-                I worked there as an intern for 4 months and learned an incredible amount.
-                <ul><b>Technologies learned:</b>
-                    <li>Front end: HTML, CSS, JavaScript, jQuery, Bootstrap, Jinja2, SVG, D3.js, Google Maps API, AJAX,
-                        Google Charts. Leaflet JS.
-                    </li>
-                    <li>Back end: Python, webapp2, Google app engine, bigTable.</li>
-                    <li>Other: JSON, XML, Git, RESTful interface,</li>
-                    <b>Responsibilities:</b>
-                    <li>Built web crawlers in Python and jQuery to crawl millions of pages for specific info.</li>
-                    <li>Created event system that logged any event occurring on server to create enough data for the
-                        graphs on the dashboards.
-                    </li>
-                    <li>Created 7 different internal web pages/dashboards to display useful company information using
-                        jQuery. These included 3 different dashboards containing many graphs created using D3.js, 2
-                        different interactive maps with plenty of interactive features (buttons, conveyor belts, real
-                        time sales etc.) using the Google Maps API for one and Leaflet JS for the other.
-                    </li>
-                    <li>Made many other minor fixes and improvements to web pages and to the Python code running Google
-                        app engine. Overall gained a lot of experience with both the front and back end.
-                    </li>
-                    <li>Gained experience with code reviews, good code practices (style, documentation, clean structure
-                        etc) and learned about the business side of a startup. I was given a lot of freedom to come up
-                        with my own ideas for many solutions but also gained valuable experience working in a team and
-                        learned how to communicate technical ideas.
-                    </li>
-                    <li>In my repeat of Signals and Systems I did well, however in my repeat of Digital Circuits I got 33% which is technically a fail (and means you must repeat the whole year)
-                        but this got pushed to 35% for some unknown reason (??? Thank the lord) which was enough to pass by compensation and I was able to pass the year. I was incredibly lucky even though I was so lazy when it came to those two modules.
-                        Again it's only fair to mention what I do badly in as well, so no one thinks I'm just perfect at getting things done which I a 100% am not.</li>
-                    <li>Pacman remake in LibGDX. Picture soon.</li>
-                    <li>Finished 16 tutorials on OpenCV with C++ in preparation for my Computer Vision module in college.</li>
-                    <li>Finished 10 tutorials on Phaser JavaScript game framework.</li>
-                    <li>Finished 10 Java/Swing video tutorials where a game called DragonTale was created.</li>
-                    <li>Finished 22 Chili intermediate DirectX video tutorials with C++ totalling around 33 hours of content.</li>
-                    <li>Finished 26 Java LibGDX game framework tutorials at <a href="http://www.gamefromscratch.com/page/LibGDX-Tutorial-series.aspx" >gamesfromscratch.com.</a></li>
-                    <li>Finished 5 WebGL JavaScript tutorials at <a href="http://learningwebgl.com/">learningwebgl.com</a>. I plan to finish more eventually so I could eventually display some nice 3D graphics on this webpage.</li>
-                    <li>Instead of just reading articles about Neural Networks which is a pastime of mine, I followed a few tutorials in C++ and Python and learned some of the basics of how their architecture is programmed and how the networks are able to learn anything.</li>
-                    <li>Read the first 3 chapters of 'Programming Game AI by Example' by Mat Buckland. It's one of the best books ever on the topic and I can't wait to finish it and apply all the topics covered.
-                    <br>Some examples in the first 3 chapters are: Finite State Machines, Boids steering (flocking behaviours for AI etc),
-                    <br>Some examples in the later chapters are: simple soccer simulation game with two teams, graphs, path finding,
-                    scripting in Lua, goal-driven behaviour and Fuzzy Logic.</li>
-                    <li>Created a Wormhole visualiser in both C++ with DirectX and JavaScript with Phaser. Video below is with C++ with plenty more videos coming in 2016 because of how many possibilities there are for amazing wormholes.</li>
-
-                </ul>
-            </li>
-            <iframe width="560" height="315" src="http://www.youtube.com/embed/YRor51Y35yA?autoplay=0" frameborder="0"
-                    allowfullscreen=""></iframe>
-        </ul>
-        <h4 class="time-period period-2015">Spring 2015</h4>
-        <ul>
-            <li>My second semester modules for 3rd year Computer Engineering were:
-                <ul>
-                    <li>Operating Systems and Concurrent Systems. My favourite module of the year. <br>Topics covered
-                        for concurrency: mutual exclusion (mutexes), semaphores, SPIN (verifying concurrent programs),
-                        critical sections and concurrency with Linux, C and pthreads.<br>Topics covered for operating
-                        systems: Operating system architectures, memory management, processor scheduling, disk I/O and
-                        file systems.
-                    </li>
-                    <li>Microprocessor Systems II.</li>
-                    <li>Computer Networks.</li>
-                    <li>Software Design and Implementation (part 2). The RPG game mentioned below was made for this
-                        module.
-                    </li>
-                    <li>Computer Architecture II. VHDL was used to simulate and design an ALU with a shifter and fast
-                        registers. Also an instruction processor was designed and simulated.
-                    </li>
-                    <li>Engineering Management. Innovation and Entrepreneurship. Coming up with a business idea,
-                        Business plans, marketing, ethics etc.
-                    </li>
-                </ul>
-            </li>
-            <li>Created my TicTacToe AI engine in C++ and DirectX. Video below.</li>
-            <li>Created a remake of the PianoTile game (the game that sold over 50 million copies) in Java, Android and
-                LibGDX. Video below.
-            </li>
-            <li>Finished working on an RPG in LibGDX, Java and Android with 11 other people as part of a college
-                project. This was a fun experience and it was difficult to manage because of how many people were
-                involved. Video below.
-            </li>
-            <li>Got my 4th scholarship in my advanced level 2 grade exam in RIAM for classical guitar.</li>
-            <li>It is pointless to just mention my successes in life on this website. I fail a lot, to succeed you must
-                fail. So I think it's fair to mention my failures too. <br>I failed Digital Circuits and Signals and
-                Systems so I had to repeat them at the end of the summer.
-            </li>
-            <a class="lightboxImage" href="assets/SpaceshipGame1.bmp" data-lightbox="image-1"
-               data-title="Spaceship Game (Summer and Winter 2014)"><img class="blog-image"
-                                                                         src="assets/SpaceshipGame1.bmp"></a><a
-                class="lightboxImage" href="assets/SpaceshipGame2.bmp" data-lightbox="image-1"
-                data-title="Spaceship Game (Summer and Winter 2014)"><img class="blog-image"
-                                                                          src="assets/SpaceshipGame2.bmp"></a><a
-                class="lightboxImage" href="assets/SpaceshipGame3.bmp" data-lightbox="image-1"
-                data-title="Spaceship Game (Summer and Winter 2014)"><img class="blog-image"
-                                                                          src="assets/SpaceshipGame3.bmp"></a>
-            <iframe width="560" height="315" src="http://www.youtube.com/embed/TNB5vSIEbn4?autoplay=0" frameborder="0"
-                    allowfullscreen=""></iframe>
-            <iframe width="560" height="315" src="http://www.youtube.com/embed/7Xut6_ZUBmg?autoplay=0" frameborder="0"
-                    allowfullscreen=""></iframe>
-            <iframe width="560" height="315" src="http://www.youtube.com/embed/gsp7nc_QWso?autoplay=0" frameborder="0"
-                    allowfullscreen=""></iframe>
-        </ul>
-        <h4 class="time-period period-2014">Year in Review: 2014</h4>
-        <ul>
-            <li><b>Languages used for the first time:</b> Java, XML.<br> <br></li>
-            <li><b>Languages used again:</b> C++. <br><br></li>
-            <li><b>Libraries/frameworks/APIs used for the first time:</b><br>AI: <span style="color: green;"></span>
-                <br>Graphics/Visualisation/Game Programming:<span style="color: orangered;"> DirectX, OpenGL ES, </span><br>Web
-                Development: <span style="color: cadetblue;"></span> <br> Other: Git, Android. <br><br></li>
-            <li><b>Quick summary and other highlights:</b> I learned how to 'actually' program meaning that for the
-                first time I was actually solving real problems and creating my own programs. Finishing my own games
-                taught me a lot.
-            </li>
-        </ul>
-        <h4 class="time-period period-2014">Winter 2014</h4>
-        <ul>
-            <li>Began 3rd year Computer Engineering (I decided to specialise into Computer after 2 years of general
-                engineering because I enjoyed it the most (I also hated everything else to be honest)). My 1st semester
-                modules were:
-                <ul>
-                    <li>Applied Probability.</li>
-                    <li>Microprocessor Systems I.</li>
-                    <li>Software Design and Implementation (part 1). 'The Dolphin Project' mentioned below was a project
-                        made for this module. Also Git and Android basics was taught.
-                    </li>
-                    <li>Engineering Mathematics V. Probability and statistics, fourier methods and partial differential
-                        equations.
-                    </li>
-                    <li>Signals and Systems.</li>
-                    <li>Digital Circuits. Yuck. Probably the most difficult module ever.</li>
-                </ul>
-            </li>
-            <li>Began to learn Java for the first time and found it more developer friendly than C++ but also very
-                similar of course. It was much easier to learn Java after going into sufficient detail with C++.
-            </li>
-            <li>Finished 8 tutorials from <a href="http://www.learnopengles.com">learnopengles.com</a> to learn enough
-                for 'The Dolphin Project' below. Tutorials topics went through lighting (per-vertex and per fragment),
-                basic texturing, blending, texture filtering, vertex buffer objects and index buffer objects. Learned a
-                good bit about OpenGL ES 2, general Computer Graphics and Android.
-            </li>
-            <li>Finished a 3D game called 'The Dolpin Project' in Android, Java and OpenGL ES. Sadly before recording
-                the video, the dolphin was unfortunately lost in an accident. Per fragment Phong lighting, 6 different
-                camera views, texturing, buttons and control of the cube was implemented. Video below with the cube.
-            </li>
-            <li>Finished a prototype of my Spaceship Game in C++ and DirectX.</li>
-            <iframe width="560" height="315" src="http://www.youtube.com/embed/vb4DOiCkOGE?autoplay=0" frameborder="0"
-                    allowfullscreen=""></iframe>
-            <iframe width="560" height="315" src="http://www.youtube.com/embed/Yo1CwiMBKxg?autoplay=0" frameborder="0"
-                    allowfullscreen=""></iframe>
-        </ul>
-        <h4 class="time-period period-2014">Summer 2014</h4>
-        <ul>
-            <li>Began for the first time to work on side projects for programming after 2 years of general engineering.
-                I started with game programming in C++ and DirectX. I finished 20 video tutorials which taught DirectX
-                and C++ by a guy named Chili. This totalled around 15 hours content.
-            </li>
-            <li>I also read a book called 'Beginning Game Programming' by Jonathan Harbour which taught DirectX, C++,
-                Windows development.
-            </li>
-            <li>Finished 15 Euler problems at <a href="https://projecteuler.net/archives">www.projecteuler.net</a> with
-                C++ but gave up after that when they started requiring serious math knowledge to prevent the program
-                from running for 15 billion years.
-            </li>
-            <li>Finished reading the 25 famous C++ tutorials at <a href="http://www.cplusplus.com/doc/tutorial/">http://www.cplusplus.com/doc/tutorial/</a>.
-                I read them all at least 3 times each until I understood each one completely. This was the first time I
-                studied a language sort of in depth (it's hard to say that with C++ to be honest because one could spend
-                10 years studying it and still not know everything). But I honestly think doing this made learning
-                anything and everything, but most importantly other languages, much easier to learn. This is because,
-                whether you want to admit it or not, C++ is quite simply difficult. So it was worth it even if I
-                suddenly never end up using C++ again.
-            </li>
-            <li>Using the skills learned I remade 6 games with C++ and simple DirectX over the summer. These were
-                TicTacToe, Checkers, Minesweeper, Gomoku, Connect 4 and Snake. Pictures are below.
-            </li>
-            <li>I also recorded Adam Rafferty's version of Superstition by Stevie Wonder on my classical guitar. Video
-                is below.
-            </li>
-            <a class="lightboxImage" href="assets/Checkers.bmp" data-lightbox="image-1"
-               data-title="Checkers (Summer 2014)"><img class="blog-image" src="assets/Checkers.bmp"></a><a
-                class="lightboxImage" href="assets/Connect4.bmp" data-lightbox="image-1"
-                data-title="Connect4 (Summer 2014)"><img class="blog-image" src="assets/Connect4.bmp"></a><a
-                class="lightboxImage" href="assets/Gomoku.bmp" data-lightbox="image-1"
-                data-title="Gomoku (5 in a row) (Summer 2014)"><img class="blog-image" src="assets/Gomoku.bmp"></a><a
-                class="lightboxImage" href="assets/Minesweeper1.bmp" data-lightbox="image-1"
-                data-title="Minesweeper (Summer 2014)"><img class="blog-image" src="assets/Minesweeper1.bmp"></a><a
-                class="lightboxImage" href="assets/Minesweeper2.bmp" data-lightbox="image-1"
-                data-title="Minesweeper (Summer 2014)"><img class="blog-image" src="assets/Minesweeper2.bmp"></a><a
-                class="lightboxImage" href="assets/Snake.bmp" data-lightbox="image-1"
-                data-title="Snake (Summer 2014)"><img class="blog-image" src="assets/Snake.bmp"></a><a
-                class="lightboxImage" href="assets/TicTacToe.bmp" data-lightbox="image-1"
-                data-title="I began game programming with TicTacToe at the start of Summer 2014"><img class="blog-image"
-                                                                                                      src="assets/TicTacToe.bmp"></a>
-            <iframe width="560" height="315" src="http://www.youtube.com/embed/IyZrrK4Fh-c?autoplay=0" frameborder="0"
-                    allowfullscreen=""></iframe>
-        </ul>
-        <h4 class="time-period period-2014">Pre-Summer 2014</h4>
-        <ul>
-            <li>Completed 2 years of general engineering in TCD. Which was just bridges and other stuff with only 1
-                programming module per year.<br> I was taught the basics of C++ in my 'Computer Engineering I' module in
-                1st year (variables, loops, functions etc). <br> I was taught more advanced C++ in my 'Computer
-                Engineering II' module in 2nd year (OOP, Pointers, Inheritance, Polymorphism, memory allocation, simple
-                data structures, a bit of multithreading etc). <br>
-
-                <p>I never thought I was too good at programming from seeing many others around me easily solve problems
-                    which was discouraging. However somewhere near the start of the programming module in 2nd year I
-                    decided that I'd actually try to give it a shot and see if it was possible to get good at
-                    programming. So I worked at it, asked hundreds of questions to my Dad (who is a programmer) and
-                    slaved away and eventually an amazing thing happened. I got good at it (surprise surprise) and even
-                    started to enjoy it. I made sure to do well in every lab assignment and got 100% in the big
-                    programming project which involved bank information and multi-threading.</p>
-
-                <p>And from then on I was happy to do programming for the rest of my life. Nothing beats the feeling of
-                    solving a problem. Dopamine being released is what people get addicted to (that warm fuzzy feeling).
-                    Some people call this the Eureka effect, my maths teacher in school called it 'The Buzz'. I call it
-                    'The God Feeling'. <br> Doesn't matter what you call it though, it's real. And it's sad most people
-                    in the world feel it only a few times a year when they could be feeling it daily. It beats any other
-                    drug because it's free, the effect lasts longer, it actually improves your life, grows your brain,
-                    makes you happier and many other reasons. <br> The bigger the problem, the bigger the buzz.</p>
-
-                <p>The Buzz can be achieved from many disciplines, however I personally find programming is one of the
-                    easiest ones to get high from, as all it takes is a few keystrokes (or a few million keystrokes) and
-                    you've solved a problem. And there are literally trillions of problems in programming. From the high
-                    level problems (Create game in C++, create neural network to recognize handwritten digits etc) to
-                    middle level problems (create function to calculate the volume of a planet) to lower level problems
-                    (add two variables together, put a semicolon in the right place). <br> Programming is also great
-                    because you have to keep improving to keep up with the fast pace of technology. My attitude is that
-                    anything I learn today will help me tomorrow, let alone a week, a month or 10 years from now.This
-                    applies even if the topics are totally different e.g. Embedded Assembly vs Neural Networks with
-                    Python. This is because one can become better at learning itself.</p>
-
-                <p>Modules taught in second year were: Solids and Structures, Computer Engineering II, Engineering and
-                    the Environment, Materials, Engineering Design III, Electronics, Engineering Design IV, Engineering
-                    Mathematics III, Engineering Mathematics IV, Themo-fluids.</p>
-
-                <p>Modules taught in first year were: Engineering Mathematics I, Engineering Mathematics II, Computer
-                    Engineering I, Physics, Chemistry, Electrical Engineering, Mechanics, Introduction to Professional
-                    Engineering, Experimental Methods, Engineering Design I (Drawing and CAD), Engineering Design
-                    II.</p></li>
-        </ul>
-    </div>
-
 
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/lightbox.js"></script><div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><div class="lb-nav"><a class="lb-prev" href=""></a><a class="lb-next" href=""></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div>
