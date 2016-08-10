@@ -1,0 +1,145 @@
+body {
+    }
+
+    #container {
+        width: auto;
+        margin: auto;
+    }
+
+    #first {
+        color: orangered;
+    }
+    #first:hover {
+        background:rgba(255,165,0, 0.3);
+    }
+    #second {
+        color: green;
+    }
+    /*todo make animation to change colour*/
+    #second:hover {
+        background:rgba(0,255,0, 0.3);
+    }
+    #third {
+        color: cadetblue;
+    }
+    #third:hover {
+        background: rgba(95,158,160,0.3);
+    }
+
+    iframe {
+        display: block;
+        margin: 7px;
+    }
+
+    body {
+        animation: fadein 3s;
+        -moz-animation: fadein 3s; /* Firefox */
+        -webkit-animation: fadein 3s; /* Safari and Chrome */
+        -o-animation: fadein 3s; /* Opera */
+    }
+
+    @keyframes fadein {
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
+        }
+    }
+    @-moz-keyframes fadein { /* Firefox */
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
+        }
+    }
+    @-webkit-keyframes fadein { /* Safari and Chrome */
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
+        }
+    }
+    @-o-keyframes fadein { /* Opera */
+        from {
+            opacity:0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    .hover-section:hover {
+        background-color: #f5f5f5;;
+    }
+    .big-header {
+        text-align: center;
+        color: #4c627c; font-family: 'Trocchi', serif; font-size: 45px; font-weight: normal; line-height: 48px; margin: 0;
+        z-index: -5;
+
+    }
+
+    h1 > a {
+        position: relative;
+        color: #4c627c;
+        text-decoration: none;
+    }
+
+    h1 > a:hover {
+        color: #213046;
+    }
+
+    h1 > a:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #000;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.8s ease-in-out 0s;
+        transition: all 0.8s ease-in-out 0s;
+    }
+
+    h1 > a:hover:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+
+    .big-header-a {
+        /*pointer-events: none;*/
+        /*cursor: default;*/
+
+        /*way 1*/
+        /*z-index: 1;*/
+        /*color: blue;*/
+          /*text-decoration: none;*/
+          /*border-bottom: 1px solid transparent;*/
+          /*transition: all ease-in-out 1s;*/
+    }
+
+    .big-header-a:hover {
+        /*way 1*/
+        /*color: red;*/
+        /*border-color: red;*/
+    }
+
+    hr {
+        /*border: 0;*/
+    }
+
+    #operating-systems {
+        float: right;
+        width: 50%;
+    }
+
+    #version-control {
+        float: left;
+        width: 50%;
+    }
