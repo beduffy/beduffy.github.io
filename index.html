@@ -28,6 +28,10 @@
     <!-- todo great way to append html live to chrome-->
     <!-- $($0).append('<div class="father"><section class="mod model-1"><div class="spinner"></div></section></div>')-->
 
+    <div class="button-holder">
+        <button id="flashy-colour-btn">Click here for flashy pointless animations that will probably slow your computer down</button>
+    </div>
+
     <div class="container-of-smr" style="width: auto">
         <div class="section-model-rows" data-id="1"></div>
     </div>
@@ -62,7 +66,8 @@
                 <li><a href="https://twitter.com/beduffy1">Twitter</a></li>
                 <li><a href="https://ie.linkedin.com/in/ben-duffy-29b779a6">LinkedIn</a></li>
                 <!--<li><a href="">Twitter</a></li>-->
-            <li><a href="/blog.html" style="font-size: x-large;">My previous website page</a> (I will eventually properly include it's contents here somewhere. At the moment it contains a lot of pictures, videos and writing)</li>
+            <li><a href="/blog.html" style="font-size: x-large;">My previous website page</a> (I will eventually properly include its contents here somewhere.
+                                    At the moment it contains a lot of pictures, videos and writing)</li>
             </ul>
             <hr>
         </div>
@@ -314,69 +319,77 @@
 
 <script>
     $(document).ready(function() {
-        var width = 50;
-        var height = 50;
-        var paddingHor = 25;
-        var paddingVer = 25;
 
-        var numSections = Math.floor(($(window).width()) / (width + paddingHor));
-        var numModels = 9;
-        var $father = $('.father');
+        var setupFlashyAnimations = function() {
+            var width = 50;
+            var height = 50;
+            var paddingHor = 25;
+            var paddingVer = 25;
 
-        var numRowsOfEachModel = 2;
-        var usedNumModelIndices = [1, 2, 3, 4, 5, 7, 8, 9];
+            var numSections = Math.floor(($(window).width()) / (width + paddingHor));
+            var numModels = 9;
+            var $father = $('.father');
 
-        var numRowsAdded = 0;
+            var numRowsOfEachModel = 2;
+            var usedNumModelIndices = [1, 2, 3, 4, 5, 7, 8, 9];
 
-        // way for adding hundreds in interesting patterns
-//        for (var k = 0; k <= usedNumModelIndices.length; k++) {
-//            var sectionHTML = '<section class="mod model-' + usedNumModelIndices[k] + '"><div class="spinner"></div></section>';
-//
-//            for (var j = 0; j < numRowsOfEachModel; j++) {
-//                for (var i = 0; i < numSections; i++) {
-//                    $father.append(sectionHTML);
-//                    var $section = $father.find('section:last-child');
-//                    $section.css('left', (i * (width + paddingHor)).toString() + 'px');
-//                    $section.css('top', ((numRowsAdded) * (height + paddingVer) + 25) + 'px');
-//                }
-//                numRowsAdded++;
-//            }
-//        }
+            var numRowsAdded = 0;
 
-
-        //Way to have them aroung big-headers
-        var sectionModelRows = $('.section-model-rows');
-        var numRowsOfEachModel = 1;
+            // way for adding hundreds in interesting patterns
+            //        for (var k = 0; k <= usedNumModelIndices.length; k++) {
+            //            var sectionHTML = '<section class="mod model-' + usedNumModelIndices[k] + '"><div class="spinner"></div></section>';
+            //
+            //            for (var j = 0; j < numRowsOfEachModel; j++) {
+            //                for (var i = 0; i < numSections; i++) {
+            //                    $father.append(sectionHTML);
+            //                    var $section = $father.find('section:last-child');
+            //                    $section.css('left', (i * (width + paddingHor)).toString() + 'px');
+            //                    $section.css('top', ((numRowsAdded) * (height + paddingVer) + 25) + 'px');
+            //                }
+            //                numRowsAdded++;
+            //            }
+            //        }
 
 
-//         for (var k = 0; k <= usedNumModelIndices.length; k++) {
-//            var sectionHTML = '<section class="mod model-' + 1 + '"><div class="spinner"></div></section>';
+            //Way to have them aroung big-headers
+            var sectionModelRows = $('.section-model-rows');
+            var numRowsOfEachModel = 1;
 
-        sectionModelRows.each(function() {
-            var modelNo = $(this).data("id");
-            if (!modelNo) return true;
 
-            for (var j = 0; j < numRowsOfEachModel; j++) {
-//                var sectionHTML = '<section class="mod model-' + currIndex + '"><div class="spinner"></div></section>';
-                var sectionHTML = '<section class="mod model-' + modelNo + '"><div class="spinner"></div></section>';
+            //         for (var k = 0; k <= usedNumModelIndices.length; k++) {
+            //            var sectionHTML = '<section class="mod model-' + 1 + '"><div class="spinner"></div></section>';
 
-                for (var i = 0; i < numSections; i++) {
-//                    sectionModelRows.append(sectionHTML);
-                    $(this).append(sectionHTML);
-                    var $section = sectionModelRows.find('section:last-child');
-                    $section.css('left', (i * (width + paddingHor)).toString() + 'px');
-                    $section.css('top', ((numRowsAdded) * (height + paddingVer) + 25) + 'px');
+            sectionModelRows.each(function () {
+                var modelNo = $(this).data("id");
+                if (!modelNo) return true;
+
+                for (var j = 0; j < numRowsOfEachModel; j++) {
+                    //                var sectionHTML = '<section class="mod model-' + currIndex + '"><div class="spinner"></div></section>';
+                    var sectionHTML = '<section class="mod model-' + modelNo + '"><div class="spinner"></div></section>';
+
+                    for (var i = 0; i < numSections; i++) {
+                        //                    sectionModelRows.append(sectionHTML);
+                        $(this).append(sectionHTML);
+                        var $section = sectionModelRows.find('section:last-child');
+                        $section.css('left', (i * (width + paddingHor)).toString() + 'px');
+                        $section.css('top', ((numRowsAdded) * (height + paddingVer) + 25) + 'px');
+                    }
+                    numRowsAdded++;
                 }
-                numRowsAdded++;
-            }
-            $(this).parent().height((numRowsAdded - 1) * (height + paddingVer) + 25 + 25);
-            numRowsAdded = 0;
+                $(this).parent().height((numRowsAdded - 1) * (height + paddingVer) + 25 + 25);
+                numRowsAdded = 0;
+            });
+    //        $('.container-of-smr').height((numRowsAdded - 1) * (height + paddingVer) + 25 + 25);
+    //        }
+            //todo put all above into function, put a debounce on resize event, empty children and then call function
+        };
+
+        $('#flashy-colour-btn').click(function() {
+            setupFlashyAnimations();
+            $(this).remove();
         });
 
-//        $('.container-of-smr').height((numRowsAdded - 1) * (height + paddingVer) + 25 + 25);
-//        }
-
-        //todo put all above into function, put a debounce on resize event, empty children and then call function
+        //todo fps counter in corner and then allow adding hundreds of animations
     })
 </script>
 
