@@ -24,12 +24,15 @@
 
 <body>
     <!-- todo add header to change to programming, what i did in, gallery, about, -->
-
     <!-- todo great way to append html live to chrome-->
     <!-- $($0).append('<div class="father"><section class="mod model-1"><div class="spinner"></div></section></div>')-->
 
     <div class="button-holder">
-        <button id="flashy-colour-btn">Click here for flashy pointless animations that will probably slow your computer down</button>
+        <button class="animation-btn" id="flashy-colour-btn">Click here for flashy pointless animations that will probably slow your computer down</button>
+    </div>
+
+    <div class="button-holder">
+        <div class="fps"></div>
     </div>
 
     <div class="container-of-smr" style="width: auto">
@@ -39,26 +42,11 @@
     <div class="container-of-smr" style="width: auto">
         <div class="section-model-rows" data-id="1"></div>
     </div>
-    <div style="width: auto">
-        <div class="father">
-            <!--<section class="mod model-1">-->
-                <!--<div class="spinner"></div>-->
-            <!--</section>-->
-        </div>
-    </div>
 
     <!-- todo create new tab for music and blog and etc -->
     <div id="container">
-        <!--<div style="width: auto">-->
-            <!--<div class="father">-->
-                <!--&lt;!&ndash;<section class="mod model-1">&ndash;&gt;-->
-                    <!--&lt;!&ndash;<div class="spinner"></div>&ndash;&gt;-->
-                <!--&lt;!&ndash;</section>&ndash;&gt;-->
-            <!--</div>-->
-        <!--</div>-->
         <div class="hover-section">
             <hr>
-            <h3>Links</h3>
             <ul>
                 <!-- todo make them share a few lines together.-->
                 <li><a href="https://github.com/beduffy">Github</a></li>
@@ -81,7 +69,7 @@
         <div class="container-of-smr" style="width: auto">
             <div class="section-model-rows" data-id="8"></div>
         </div>
-        <h1 class="big-header"><a class="big-header-a">Main things I am currently doing</a></h1>
+        <h1 class="big-header"><a class="big-header-a">Currently</a></h1>
         <div class="container-of-smr" style="width: auto">
             <div class="section-model-rows" data-id="9"></div>
         </div>
@@ -91,6 +79,7 @@
         <div class="hover-section">
             <hr>
             <ul>
+                <li>Taking a few months </li>
                 <li>Working as a Software Intern at the company Intuition Publishing Ltd. Technologies used: C#, ASP.NET,
                     JavaScript, NodeJS, Express, Angular and much more.
                 </li>
@@ -101,9 +90,9 @@
                 </li>
                 <li>Studying, Reading and researching about all the latest Machine Learning and Deep Learning trends</li>
                 <li>Reading about technology in general</li>
-                <li>Learning Saxophone for 70 hours so far and counting</li>
+                <li>Learning Saxophone for 91 hours 20 minutes and counting</li>
                 <li>Still practicing guitar and piano regularly and practicing jazz with the band</li>
-                <li>Attempting (succeeding and failing) to do 15 other things usually each week which includes: Exercise, Updating this website, Coursera Machine Learning course and recording new music videos</li>
+                <li>Attempting (succeeding and failing) to do 15 other things usually each week which includes: Exercise, Updating this website, a Coursera Machine Learning course and recording new music videos</li>
             </ul>
             <hr>
         </div>
@@ -306,71 +295,69 @@
 
     </div>
 
-    <!--<div style="width: auto">-->
-        <!--<div class="father">-->
-            <!--<section class="mod model-1">-->
-                <!--<div class="spinner"></div>-->
-            <!--</section>-->
-        <!--</div>-->
-    <!--</div>-->
+    <div class="button-holder">
+        <button class="animation-btn" id="crazy-flash-btn">If you're really feeling adventurous and want to mess up your computer with more pointless animations, click this button</button>
+    </div>
+
+    <div class="button-holder">
+        <div class="fps"></div>
+    </div>
+
+    <div style="width: auto">
+        <div class="father">
+        </div>
+    </div>
 
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/lightbox.js"></script><div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><div class="lb-nav"><a class="lb-prev" href=""></a><a class="lb-next" href=""></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div>
 
 <script>
     $(document).ready(function() {
+        // The higher this value, the less the fps will reflect temporary variations
+        // A value of 1 will only keep the last value
+        var filterStrength = 20;
+        var frameTime = 0, lastLoop = new Date, thisLoop;
 
-        var setupFlashyAnimations = function() {
+        function gameLoop(){
+            var thisFrameTime = (thisLoop=new Date) - lastLoop;
+            frameTime+= (thisFrameTime - frameTime) / filterStrength;
+            lastLoop = thisLoop;
+        }
+
+        setInterval(function() {
+            gameLoop();
+        }, Math.floor(1000 / 60));
+
+        // Report the fps only every second, to only lightly affect measurements
+        var $fpsDisplay = $('.fps');
+        $fpsDisplay.hide();
+        setInterval(function(){
+            $fpsDisplay.text((1000/frameTime).toFixed(1) + " fps");
+        }, 1000);
+
+        var setupNormalAnimations = function() {
             var width = 50;
             var height = 50;
             var paddingHor = 25;
             var paddingVer = 25;
-
             var numSections = Math.floor(($(window).width()) / (width + paddingHor));
-            var numModels = 9;
-            var $father = $('.father');
-
-            var numRowsOfEachModel = 2;
-            var usedNumModelIndices = [1, 2, 3, 4, 5, 7, 8, 9];
-
             var numRowsAdded = 0;
 
-            // way for adding hundreds in interesting patterns
-            //        for (var k = 0; k <= usedNumModelIndices.length; k++) {
-            //            var sectionHTML = '<section class="mod model-' + usedNumModelIndices[k] + '"><div class="spinner"></div></section>';
-            //
-            //            for (var j = 0; j < numRowsOfEachModel; j++) {
-            //                for (var i = 0; i < numSections; i++) {
-            //                    $father.append(sectionHTML);
-            //                    var $section = $father.find('section:last-child');
-            //                    $section.css('left', (i * (width + paddingHor)).toString() + 'px');
-            //                    $section.css('top', ((numRowsAdded) * (height + paddingVer) + 25) + 'px');
-            //                }
-            //                numRowsAdded++;
-            //            }
-            //        }
-
-
             //Way to have them aroung big-headers
-            var sectionModelRows = $('.section-model-rows');
+            var $sectionModelRows = $('.section-model-rows');
             var numRowsOfEachModel = 1;
 
-
-            //         for (var k = 0; k <= usedNumModelIndices.length; k++) {
-            //            var sectionHTML = '<section class="mod model-' + 1 + '"><div class="spinner"></div></section>';
-
-            sectionModelRows.each(function () {
+            $sectionModelRows.each(function () {
                 var modelNo = $(this).data("id");
                 if (!modelNo) return true;
 
                 for (var j = 0; j < numRowsOfEachModel; j++) {
-                    //                var sectionHTML = '<section class="mod model-' + currIndex + '"><div class="spinner"></div></section>';
                     var sectionHTML = '<section class="mod model-' + modelNo + '"><div class="spinner"></div></section>';
 
                     for (var i = 0; i < numSections; i++) {
                         //                    sectionModelRows.append(sectionHTML);
                         $(this).append(sectionHTML);
-                        var $section = sectionModelRows.find('section:last-child');
+                        var $section = $sectionModelRows.find('section:last-child');
                         $section.css('left', (i * (width + paddingHor)).toString() + 'px');
                         $section.css('top', ((numRowsAdded) * (height + paddingVer) + 25) + 'px');
                     }
@@ -379,17 +366,50 @@
                 $(this).parent().height((numRowsAdded - 1) * (height + paddingVer) + 25 + 25);
                 numRowsAdded = 0;
             });
-    //        $('.container-of-smr').height((numRowsAdded - 1) * (height + paddingVer) + 25 + 25);
-    //        }
+        };
+
+        var setupFlashyAnimations = function() {
+            var width = 50;
+            var height = 50;
+            var paddingHor = 25;
+            var paddingVer = 25;
+
+            var numSections = Math.floor(($(window).width()) / (width + paddingHor));
+            var $father = $('.father');
+
+            var numRowsOfEachModel = 3;
+            var usedNumModelIndices = [1, 2, 3, 4, 5, 7, 8, 9];
+
+            var numRowsAdded = 0;
+
+            // way for adding hundreds in interesting patterns
+            for (var k = 0; k < usedNumModelIndices.length; k++) {
+                var sectionHTML = '<section class="mod model-' + usedNumModelIndices[k] + '"><div class="spinner"></div></section>';
+
+                for (var j = 0; j < numRowsOfEachModel; j++) {
+                    for (var i = 0; i < numSections; i++) {
+                        $father.append(sectionHTML);
+                        var $section = $father.find('section:last-child');
+                        $section.css('left', (i * (width + paddingHor)).toString() + 'px');
+                        $section.css('top', ((numRowsAdded) * (height + paddingVer) + 25) + 'px');
+                    }
+                    numRowsAdded++;
+                }
+            }
             //todo put all above into function, put a debounce on resize event, empty children and then call function
         };
 
         $('#flashy-colour-btn').click(function() {
-            setupFlashyAnimations();
+            $fpsDisplay.show();
+            setupNormalAnimations();
             $(this).remove();
         });
 
-        //todo fps counter in corner and then allow adding hundreds of animations
+        $('#crazy-flash-btn').click(function() {
+            $fpsDisplay.show();
+            setupFlashyAnimations();
+            $(this).remove();
+        });
     })
 </script>
 
