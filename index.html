@@ -265,42 +265,58 @@
                 <hr>
                 <h2>Web Development</h2>
 
-                <h3>Clent Side Frameworks/Libraries</h3>
-                <ul>
-                    <li>jQuery</li>
-                    <li>Bootstrap</li>
-                    <li>Templating with Handlebars, Jinja2</li>
-                    <li>Angular JS</li>
-                    <li>Google Maps API</li>
-                    <li>D3.js</li>
-                    <li>Leaflet JS</li>
-                    <li>WebGL</li>
-                    <li>LESS</li>
-                </ul>
-                <h3>Server Side Frameworks/Libraries</h3>
-                <ul>
-                    <li>NodeJS</li>
-                    <li>Express</li>
-                    <li>Google App Engine (using Python and webapp2)</li>
-                    <li>Python Flask</li>
-                    <li>Socket.io</li>
-                    <li>Grunt</li>
-                    <li>Azure PaaS</li>
-                    <li>Consul</li>
-                </ul>
-                <h3>General Web skills</h3>
-                <ul>
-                    <li>Security (SQL injection, Cross site scripting, TLS, etc)</li>
-                    <li>HTTP</li>
-                    <li>DNS</li>
-                    <li>Microservices</li>
-                    <li>Go Continuous Delivery</li>
-                    <li>RabbitMQ</li>
-                    <li>NoSQL (Cassandra, MongoDB, App Engine Datastore)</li>
-                    <li>SQL (MySQL, T-SQL, Oracle SQL)</li>
-                    <li>REST (documenting APIs, writing APIs, POSTMAN, Fiddler, etc)</li>
-                </ul>
+                <div class="web-skills-section">
+                    <div class="client-side-frameworks">
+                        <h3>Client Side Frameworks/Libraries</h3>
+                        <ul>
+                            <li>jQuery</li>
+                            <li>Bootstrap</li>
+                            <li>Templating with Handlebars, Jinja2</li>
+                            <li>Angular JS</li>
+                            <li>Google Maps API</li>
+                            <li>D3.js</li>
+                            <li>Leaflet JS</li>
+                            <li>WebGL</li>
+                            <li>LESS</li>
+                        </ul>
+                    </div>
+
+                    <div class="server-side-frameworks">
+                        <h3>Server Side Frameworks/Libraries</h3>
+                        <ul>
+                            <li>NodeJS</li>
+                            <li>Express</li>
+                            <li>Google App Engine (using Python and webapp2)</li>
+                            <li>Python Flask</li>
+                            <li>Socket.io</li>
+                            <li>Grunt</li>
+                            <li>Azure PaaS</li>
+                            <li>Consul</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="general-web-skills">
+                        <h3>General Web skills</h3>
+                        <ul>
+                            <li>Security (SQL injection, Cross site scripting, TLS, etc)</li>
+                            <li>HTTP</li>
+                            <li>DNS</li>
+                            <li>Microservices</li>
+                            <li>Go Continuous Delivery</li>
+                            <li>RabbitMQ</li>
+                            <li>NoSQL (Cassandra, MongoDB, App Engine Datastore)</li>
+                            <li>SQL (MySQL, T-SQL, Oracle SQL)</li>
+                            <li>REST (documenting APIs, writing APIs, POSTMAN, Fiddler, etc)</li>
+                        </ul>
+                    </div>
+                </div>
+
+
                 <hr>
+
+
+
             </div>
         </div>
 
@@ -369,10 +385,10 @@
         <div class="hover-section">
             <hr>
             <ul>
-                <li>Classical Guitar</li>
-                <li>Electric Guitar</li>
-                <li>Piano</li>
-                <li>Saxophone</li>
+                <li>Classical Guitar (<span id="classical-guitar-time"></span>)</li>
+                <li>Electric Guitar (<span id="electric-guitar-time"></span>)</li>
+                <li>Piano (<span id="piano-time"></span>)</li>
+                <li>Saxophone (<span id="saxophone-time"></span>)</li>
             </ul>
             <hr>
         </div>
@@ -400,6 +416,34 @@
 
 <script>
     $(document).ready(function() {
+        var timeSince = function(date) {
+            if (typeof date !== 'object') {
+                date = new Date(date);
+            }
+
+            var seconds = Math.floor((new Date().getTime() - date.getTime()) / 1000);
+            var years = Math.floor(seconds / 31536000);
+            var stringToReturn = years + ' years';
+            var months = Math.floor(seconds / 2592000) - (years * 12);
+            stringToReturn += ', ' + months + ' months';
+
+            return stringToReturn;
+        };
+
+        // Date since September at age 7 for classical so. September 15th or so 2001.
+        classicalGuitarStartDate = new Date("September 15, 2001");
+        // Electric guitar 3rd year so 2009 november 15th
+        electricGuitarStartDate = new Date("November 15, 2009");
+        // Piano 2011 November
+        pianoStartDate = new Date("November 15, 2011");
+        // Saxophone 15/10/2017
+        saxophoneStartDate = new Date("May 15, 2016");
+
+        $('#classical-guitar-time').html(timeSince(classicalGuitarStartDate));
+        $('#electric-guitar-time').html(timeSince(electricGuitarStartDate));
+        $('#piano-time').html(timeSince(pianoStartDate));
+        $('#saxophone-time').html(timeSince(saxophoneStartDate));
+
         // The higher this value, the less the fps will reflect temporary variations
         // A value of 1 will only keep the last value
         var filterStrength = 20;

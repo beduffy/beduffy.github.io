@@ -104,6 +104,35 @@ body {
         }
     }
 
+    .hover-section {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    @media (min-width:960px) {
+
+    }
+
+    .client-side-frameworks {
+        width:auto;
+        width:47%;
+        height:auto;
+        float:left;
+    }
+    .server-side-frameworks {
+        width:auto;
+        width:47%;
+        height:auto;
+        float:right;
+    }
+
+    .general-web-skills {
+        clear: both;
+        width: inherit;
+        height: auto;
+        position: static;
+    }
+
     .hover-section:hover {
         background-color: #ccc9c9;
     }
