@@ -113,6 +113,23 @@ body {
 
     }
 
+    .scrollable-div {
+        height: 500px;
+        overflow-y: scroll;
+    }
+
+    #more-less-btn {
+        text-align: center;
+        color: blue;
+        text-decoration: underline;
+        list-style-type: none;
+    }
+
+    #more-less-btn:hover {
+        color: darkgoldenrod;
+        cursor: pointer;
+    }
+
     .client-side-frameworks {
         width:auto;
         width:47%;
