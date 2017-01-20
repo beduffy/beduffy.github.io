@@ -11,6 +11,7 @@ body {
     }
     #first:hover {
         background:rgba(255,165,0, 0.3);
+        color: black;
     }
     #second {
         color: green;
@@ -18,12 +19,14 @@ body {
     /*todo make animation to change colour*/
     #second:hover {
         background:rgba(0,255,0, 0.3);
+        color: black;
     }
     #third {
         color: cadetblue;
     }
     #third:hover {
         background: rgba(95,158,160,0.3);
+        color: black;
     }
 
     .animation-btn {
