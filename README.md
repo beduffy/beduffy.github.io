@@ -5,7 +5,7 @@
     <li>A Project Gallery</li>
     <li>Social Media information all in one place</li>
     <li>Some visualisations.</li>
-<ol>
+</ol>
 
 <h5>What I hope this static website website will be (eventually):</h5>
 <ol>
