@@ -10,8 +10,8 @@
 <h5>What I hope this static website website will be (eventually):</h5>
 <ol>
     <li>Dynamic</li>
-    <li>Much more crazy graphical visualisations using Phaser or WebGL</li>
-    <li>Some crazy browser/JS visualisations with D3.js or other</li>
+    <li>Much more crazy graphical visualisations using Phaser.js or WebGL</li>
+    <li>Some crazy browser/JS visualisations with D3.js CSS or other</li>
     <li>Hopefully make a simple game or two</li>
     <li>Links to any writing I do (Loads coming up)</li>
     <li>Hopefully some AI stuff</li>
