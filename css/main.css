@@ -146,11 +146,24 @@ body {
         float:right;
     }
 
+    .frameworks {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
     .general-web-skills {
         clear: both;
         width: inherit;
         height: auto;
         position: static;
+    }
+
+    .deep-learning-frameworks {
+        float: left;
+        width: 50%;
+    }
+    .general-ds-frameworks {
+        margin-left: 50%;
     }
 
     .hover-section:hover {
