@@ -24,11 +24,11 @@
 </head>
 
 <body style="font-family: Verdana, Geneva, sans-serif;">
-    <div class="button-holder">
+    <div class="fun-button-holder">
         <button class="animation-btn" id="flashy-colour-btn">Click here for flashy, pointless animations that will probably slow your device down</button>
     </div>
 
-    <div class="button-holder">
+    <div class="fun-button-holder">
         <div class="fps"></div>
     </div>
 
@@ -36,7 +36,7 @@
         <div class="section-model-rows" data-id="1"></div>
     </div>
     <div class="tooltip">
-        <!--todo only allow the fun buttons after clicking this button-->
+        <!--todo fix css cant copy cursor witin should only be heading bug-->
         <h1 class="big-header main-header"><a class="big-header-a main-section-toggle-btn open-close-all-headings">Ben Duffy's adventures with Computers and Music</a></h1>
         <div style="text-align: center;">
             <span class="tooltiptext">Click to unroll/roll all sections</span>
@@ -130,6 +130,15 @@
                         Gave my first 2 talks. Was on my first podcast.
                         Finished my Classical Guitar Diploma after 17 years training.
                         3 summer schools (<a href="http://dl-lab.eu/schedule/">ISSonDL</a>, <a href="https://dlrlsummerschool.ca/#schedule">DLRL2018</a>, <a href="http://deepbayes.ru/">DeepBayes</a>) and my first conference (<a href="https://www.hlai-conf.org/program">HLAI</a>).
+                        Began working on two big projects within The M Tank:
+                            <ul>
+                                <li>
+                                    Multi-Modal Embodied Agents with strong generative/world models for multi-task learning
+                                </li>
+                                <li>
+                                    Automatically modelling and distilling knowledge within AI. In other words, summarising the research firehose coming from related fields within ML/DL/RL/AI/DS/CS/Stats.
+                                </li>
+                            </ul>
                     </li>
                     <li>
                         <b>2017</b>:
@@ -164,7 +173,6 @@
                         Birth -> Kindergarten -> Primary School -> Classical Guitar (age 7) -> Secondary school -> Started 1st Year General Engineering
                     </li>
 
-                </ul>
                 <hr>
             </div>
         </div>
@@ -550,11 +558,11 @@
         </div>
     </div>
 
-    <div class="button-holder">
+    <div class="fun-button-holder">
         <button class="animation-btn" id="crazy-flash-btn">If you're really feeling adventurous and want to mess up your computer with more pointless animations, click this button</button>
     </div>
 
-    <div class="button-holder">
+    <div class="fun-button-holder">
         <div class="fps"></div>
     </div>
 
@@ -698,7 +706,6 @@
         });
 
         var makeHiddenOrShow = function(jQueryStr, makeHidden) {
-            console.log(jQueryStr, makeHidden);
             if (makeHidden == true) {
                 $(jQueryStr).hide();
             }
@@ -713,13 +720,10 @@
         var hiddenArray = new Array(allHeadingClickHandlers.length).fill(true);
         //hiddenArray[7] = false; // make "music" true just to highlight that
         for (let i = 0; i < allHeadingClickHandlers.length; i++) {
-            if (i < 3) {
+            if (i < 4) {
                 hiddenArray[i] = false;
             }
 
-            console.log(i);
-            console.log(hiddenArray[i]);
-            /*$(allHeadingClickHandlers[i] + '-hover').hide();*/
             makeHiddenOrShow(allHeadingClickHandlers[i] + '-hover', hiddenArray[i]);
             $(allHeadingClickHandlers[i]).click(function() {
                 hiddenArray[i] = !hiddenArray[i]; // invert boolean to make opposite
@@ -728,10 +732,17 @@
         }
 
         var currentBooleanForClickOfAllHeadings = false;
+        // maybe begin with all closed. Maybe.
         /*for (let i = 0; i < allHeadingClickHandlers.length; i++) {
             makeHiddenOrShow(allHeadingClickHandlers[i] + '-hover', true);
         }*/
+        $('.fun-button-holder').hide();
+        var numTimesClicked = 0;
         $('.open-close-all-headings').click(function() {
+            numTimesClicked++;
+            if (numTimesClicked == 2) {
+                $('.fun-button-holder').show();
+            }
             currentBooleanForClickOfAllHeadings = !currentBooleanForClickOfAllHeadings;
             for (let i = 0; i < allHeadingClickHandlers.length; i++) {
                 hiddenArray[i] = currentBooleanForClickOfAllHeadings;
