@@ -36,38 +36,59 @@
         <div class="section-model-rows" data-id="1"></div>
     </div>
     <div class="tooltip">
+        <!--todo to the left bug-->
+        <!--todo only allow the fun buttons after clicking this button-->
         <h1 class="big-header main-header"><a class="big-header-a main-section-toggle-btn open-close-all-headings">Ben Duffy's adventures with Computers and Music</a></h1>
-        <span class="tooltiptext">Click to unroll all sections</span>
+        <span class="tooltiptext">Click to unroll/roll all sections</span>
     </div>
     <!--<h3 style="text-align: center; font-family: Consolas, monaco, monospace;">if (anything): doAnything()</h3>-->
     <div class="container-of-smr" style="width: auto">
         <div class="section-model-rows" data-id="1"></div>
     </div>
 
+     <!--<div class="container-of-smr" style="width: auto">-->
+        <!--<div class="section-model-rows" data-id="2"></div>-->
+    <!--</div>-->
+
+
+
     <!-- todo create new tab for music and blog and etc -->
     <div id="container">
-        <div class="hover-section main-section-toggle-btn">
-            <hr>
-            <ul id="ul-social-media">
-                <!-- todo make them share a few lines together.-->
+        <div class="main-section-toggle-btn links">
+            <h1 class="big-header"><a class="big-header-a">Links</a></h1>
+            <div class="container-of-smr" style="width: auto">
+                <div class="section-model-rows" data-id="1"></div>
+            </div>
+            <div class="hover-section links-hover">
 
-                <li id="hdrXXX">
-                    <a id="ctl00_XXX" title="Project gallery" class="hdrXXX" href="/gallery.html" target="_blank">
-                        <img id="ctl00_XXX1" src="assets/gallerycollageiconresized160px.png" style="border: 0; margin-right: 15px" />
-                        <div id="XXX">Messy Project Gallery</div>
-                        <!-- TODO on hover bigger picture. -->
-                    </a>
-                </li>
+                <hr>
 
-                <li><a href="https://github.com/beduffy">Github <i class="fa fa-github fa-3x" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.youtube.com/channel/UCuhLrh5bZ_Tyvugtvi9upQA">YouTube <i class="fa fa-youtube fa-3x" aria-hidden="true"></i></a></li>
-                <li><a href="https://twitter.com/beduffy1">Twitter <i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a></li>
-                <li><a href="https://ie.linkedin.com/in/ben-duffy-29b779a6">LinkedIn <i class="fa fa-linkedin-square  fa-3x" aria-hidden="true"></i></a></li>
-                <li><a href="/cool-images.html">Cool infographics I like</a></li>
-                <li><a href="/blog.html">My previous website page</a></li>
-                <li>Personal email: <a href="mailto:benfduffy@gmail.com">benfduffy@gmail.com</a></li>
-            </ul>
-            <hr>
+                <ul id="ul-social-media">
+                    <!-- todo make them share a few lines together.-->
+
+                    <li id="hdrXXX">
+                        <a id="ctl00_XXX" title="Project gallery" class="hdrXXX" href="/gallery.html" target="_blank">
+                            <img id="ctl00_XXX1" src="assets/gallerycollageiconresized160px.png"
+                                 style="border: 0; margin-right: 15px"/>
+                            <div id="XXX">Messy Project Gallery</div>
+                            <!-- TODO on hover bigger picture. -->
+                        </a>
+                    </li>
+
+                    <li><a href="https://github.com/beduffy">Github <i class="fa fa-github fa-3x"
+                                                                       aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCuhLrh5bZ_Tyvugtvi9upQA">YouTube <i
+                            class="fa fa-youtube fa-3x" aria-hidden="true"></i></a></li>
+                    <li><a href="https://twitter.com/beduffy1">Twitter <i class="fa fa-twitter fa-3x"
+                                                                          aria-hidden="true"></i></a></li>
+                    <li><a href="https://ie.linkedin.com/in/ben-duffy-29b779a6">LinkedIn <i
+                            class="fa fa-linkedin-square  fa-3x" aria-hidden="true"></i></a></li>
+                    <li><a href="/cool-images.html">Cool infographics I like</a></li>
+                    <li><a href="/blog.html">My previous website page</a></li>
+                    <li>Personal email: <a href="mailto:benfduffy@gmail.com">benfduffy@gmail.com</a></li>
+                </ul>
+                <hr>
+            </div>
         </div>
 
         <div class="short-bio main-section-toggle-btn">
@@ -80,7 +101,7 @@
             </div>
 
 
-            <div class="hover-section principles-text">
+            <div class="hover-section principles-text short-bio-hover">
                 Ben Duffy is a Data Scientist, Deep Learning/AI Researcher and Computer Engineer hybrid obsessed with using Machine Learning to create truly intelligent machines for the benefit of humanity.
                 <br><br>Favourite topics/applications within AI/ML/DL/DS:
                 <br>Computer Vision, NLP, Reinforcement Learning, Reasoning, Generative Models, Meta-Learning and 100 more.
@@ -100,7 +121,7 @@
             </div>
 
 
-            <div class="hover-section principles-text">
+            <div class="hover-section principles-text timeline-hover">
             <hr>
                 <ul>
                     <li>
@@ -157,7 +178,7 @@
                 <div class="section-model-rows" data-id="8"></div>
             </div>
 
-            <div class="hover-section principles-text">
+            <div class="hover-section principles-text publications-hover">
                 <hr>
                     <ul>
                         <li>
@@ -193,7 +214,7 @@
                 <div class="section-model-rows" data-id="8"></div>
             </div>
 
-            <div class="hover-section principles-text">
+            <div class="hover-section principles-text principles-hover">
                 <hr>
                 <ul>
                     <li>My two favourite things to do are: <b>Creating</b> and <b>Learning</b>.
@@ -675,7 +696,7 @@
             $(this).remove();
         });
 
-        var showOrHide = function(jQueryStr, makeHidden) {
+        var makeHiddenOrShow = function(jQueryStr, makeHidden) {
             console.log(jQueryStr, makeHidden);
             if (makeHidden == true) {
                 $(jQueryStr).hide();
@@ -685,24 +706,35 @@
             }
         }
 
-        var allHeadingClickHandlers = ['.programming-langs', '.fields-specialisations', '.other-technical-skills', '.other-interests', '.music'];
-        var hiddenArray = [true, true, true, true, false];
+        var allHeadingClickHandlers = ['.links', '.short-bio', '.timeline', '.publications', '.principles', '.programming-langs', '.fields-specialisations', '.other-technical-skills',
+                                       '.music', '.other-interests'];
+
+        var hiddenArray = new Array(allHeadingClickHandlers.length).fill(true);
+        //hiddenArray[7] = false; // make "music" true just to highlight that
         for (let i = 0; i < allHeadingClickHandlers.length; i++) {
+            if (i < 3) {
+                hiddenArray[i] = false;
+            }
+
             console.log(i);
             console.log(hiddenArray[i]);
             /*$(allHeadingClickHandlers[i] + '-hover').hide();*/
-            showOrHide(allHeadingClickHandlers[i] + '-hover', hiddenArray[i]);
+            makeHiddenOrShow(allHeadingClickHandlers[i] + '-hover', hiddenArray[i]);
             $(allHeadingClickHandlers[i]).click(function() {
                 hiddenArray[i] = !hiddenArray[i]; // invert boolean to make opposite
-                showOrHide(allHeadingClickHandlers[i] + '-hover', hiddenArray[i]); // hide or show hover sections on new boolean
+                makeHiddenOrShow(allHeadingClickHandlers[i] + '-hover', hiddenArray[i]); // hide or show hover sections on new boolean
             });
         }
 
         var currentBooleanForClickOfAllHeadings = false;
+        /*for (let i = 0; i < allHeadingClickHandlers.length; i++) {
+            makeHiddenOrShow(allHeadingClickHandlers[i] + '-hover', true);
+        }*/
         $('.open-close-all-headings').click(function() {
             currentBooleanForClickOfAllHeadings = !currentBooleanForClickOfAllHeadings;
             for (let i = 0; i < allHeadingClickHandlers.length; i++) {
-                showOrHide(allHeadingClickHandlers[i] + '-hover', currentBooleanForClickOfAllHeadings);
+                hiddenArray[i] = currentBooleanForClickOfAllHeadings;
+                makeHiddenOrShow(allHeadingClickHandlers[i] + '-hover', currentBooleanForClickOfAllHeadings);
             }
         });
     })
