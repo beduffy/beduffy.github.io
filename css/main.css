@@ -263,7 +263,7 @@ body {
 
     .tooltip {
         position: relative;
-        display: inline-block;
+        /*display: inline-block;*/
         border-bottom: 1px dotted black;
     }
 
@@ -277,7 +277,7 @@ body {
         padding: 5px 0;
 
         /* Position the tooltip */
-        position: absolute;
+        /*position: absolute;*/
         z-index: 1;
     }
 
