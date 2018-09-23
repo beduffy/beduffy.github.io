@@ -35,7 +35,10 @@
     <div class="container-of-smr" style="width: auto">
         <div class="section-model-rows" data-id="1"></div>
     </div>
-    <h1 class="big-header main-header"><a class="big-header-a">Ben Duffy's adventures with Computers and Music</a></h1>
+    <div class="tooltip">
+        <h1 class="big-header main-header"><a class="big-header-a main-section-toggle-btn open-close-all-headings">Ben Duffy's adventures with Computers and Music</a></h1>
+        <span class="tooltiptext">Click to unroll all sections</span>
+    </div>
     <!--<h3 style="text-align: center; font-family: Consolas, monaco, monospace;">if (anything): doAnything()</h3>-->
     <div class="container-of-smr" style="width: auto">
         <div class="section-model-rows" data-id="1"></div>
@@ -43,7 +46,7 @@
 
     <!-- todo create new tab for music and blog and etc -->
     <div id="container">
-        <div class="hover-section">
+        <div class="hover-section main-section-toggle-btn">
             <hr>
             <ul id="ul-social-media">
                 <!-- todo make them share a few lines together.-->
@@ -67,7 +70,7 @@
             <hr>
         </div>
 
-        <div class="timeline">
+        <div class="short-bio main-section-toggle-btn">
             <div class="container-of-smr" style="width: auto">
                 <div class="section-model-rows" data-id="2"></div>
             </div>
@@ -82,12 +85,12 @@
                 <br><br>Favourite topics/applications within AI/ML/DL/DS:
                 <br>Computer Vision, NLP, Reinforcement Learning, Reasoning, Generative Models, Meta-Learning and 100 more.
                 <br><br>Co-founder at <a href="http://www.themtank.org">The M Tank</a>
-                <br>Currently working at Accenture as a Data Scientist.
+                <br>Currently working at Accenture as a Data Scientist
             </div>
             <hr>
         </div>
 
-        <div class="timeline">
+        <div class="timeline main-section-toggle-btn">
             <div class="container-of-smr" style="width: auto">
                 <div class="section-model-rows" data-id="1"></div>
             </div>
@@ -144,7 +147,7 @@
             </div>
         </div>
 
-        <div class="publications">
+        <div class="publications main-section-toggle-btn">
             <div class="container-of-smr" style="width: auto">
                 <div class="section-model-rows" data-id="8"></div>
             </div>
@@ -181,7 +184,7 @@
             </div>
         </div>
 
-        <div class="principles">
+        <div class="principles main-section-toggle-btn">
             <div class="container-of-smr" style="width: auto">
                 <div class="section-model-rows" data-id="8"></div>
             </div>
@@ -203,7 +206,7 @@
                 <br>Meta-<b>Learning</b> i.e. <b>Learning</b> how to <b>learn</b>. Once you <b>learn</b> how to <b>learn</b> well, you can <b>learn</b> anything. How do we get better at <b>learning</b> itself?
                 By practicing <b>learning</b> constantly while simultaneously analysing and finding better ways to improve your own personal <b>learning</b>.
                 Therefore, <b>learning</b> <u>anything</u> can help your ability to <b>learn</b> other unrelated things (Transfer <b>Learning</b> again and I think it makes my "ping pong -> essay writing" point at least somewhat true in this sense).
-                It is sad that the state of education today often discourages <b>learning</b> more than it encourages it.</li>
+                It is sad that the state of education today often discourages <b>learning</b> more than it encourages it. #feelthelearn</li>
                     <li><b>Creating</b>... So much to say about this but I'll leave it at: very little can give more meaning and fullfilment than the act of creating something new directly from your own imagination.</li>
                     <li>I like to make <u>everything</u> as simple as possible by using logic, breaking it into sub-parts, reorganising, focusing and using a first-principles approach.
                         This helps me understand things to the very inner core and throughout my life this has helped me and
@@ -218,7 +221,7 @@
             </div>
         </div>
 
-      <div class="programming-langs">
+      <div class="programming-langs main-section-toggle-btn">
             <div class="container-of-smr" style="width: auto">
                 <div class="section-model-rows" data-id="7"></div>
             </div>
@@ -226,8 +229,8 @@
             <div class="container-of-smr" style="width: auto">
                 <div class="section-model-rows" data-id="7"></div>
             </div>
-
-            <div class="hover-section">
+<!--$('.programming-langs-hover').hide()-->
+            <div class="hover-section programming-langs-hover">
                 <hr>
                 <h2>Main used languages in order of preference/frequency used</h2>
                 <ul>
@@ -242,7 +245,7 @@
                 </ul>
                 <hr>
             </div>
-            <div class="hover-section">
+            <div class="hover-section programming-langs-hover">
                 <hr>
                 <h2>Other "Programming Languages" used</h2>
                 <ul>
@@ -256,7 +259,7 @@
 
         </div>
 
-        <div class="frameworks">
+        <div class="fields-specialisations main-section-toggle-btn">
             <div class="container-of-smr" style="width: auto">
                 <div class="section-model-rows" data-id="5"></div>
             </div>
@@ -264,7 +267,7 @@
             <div class="container-of-smr" style="width: auto">
                 <div class="section-model-rows" data-id="4"></div>
             </div>
-            <div id="second" class="center-section">
+            <div id="second" class="center-section fields-specialisations-hover">
                 <hr>
                 <h2>Machine Learning/Data Science/AI</h2>
 
@@ -338,7 +341,7 @@
                 </div>
                 <hr>
             </div>
-            <div id="first" class="center-section">
+            <div id="first" class="center-section fields-specialisations-hover">
                 <hr>
                 <h2>Graphics, Visualisation and Game Programming</h2>
 
@@ -359,7 +362,7 @@
                 <hr>
             </div>
 
-            <div id="third" class="center-section">
+            <div id="third" class="center-section fields-specialisations-hover">
                 <hr>
                 <h2>Web Development</h2>
 
@@ -413,110 +416,116 @@
             </div>
         </div>
 
-        <div class="container-of-smr" style="width: auto">
-            <div class="section-model-rows" data-id="3"></div>
-        </div>
-        <h1 class="big-header"><a class="big-header-a">Other technical skills</a></h1>
-        <div class="container-of-smr" style="width: auto">
-            <div class="section-model-rows" data-id="3"></div>
-        </div>
-        <div class="hover-section">
-            <hr>
-            <!--<div id="version-control">-->
-            <div>
-                <h2>Operating Systems</h2>
-                <ul>
-                    <li>Windows</li>
-                    <li>Linux</li>
-                    <li>OSX</li>
-                </ul>
+        <div class="other-technical-skills main-section-toggle-btn">
+            <div class="container-of-smr" style="width: auto">
+                <div class="section-model-rows" data-id="3"></div>
             </div>
-            <!--<div id="operating-systems">-->
-            <div>
-                <h2>Other</h2>
-                <ul>
-                    <li>Git</li>
-                    <li>Android development</li>
-                    <li>Agile</li>
-                    <li>Design Patterns</li>
-                    <li>Video editing, powerpoint, graphing/mindmap tools</li>
-                    <li>Testing (Unit, Integration)</li>
-                    <li>Microservices</li>
-                    <li>Continous Delivery/integration</li>
-                    <li><span style="font-weight: bold;">IDEs</span>: PyCharm, Visual Studio, Sublime Text, Atom, Eclipse, Android Studio, WebStorm, IntelliJ, IDLE Python 3, Arduino, Keli uVision 4</li>
-                    <!-- todo some of these can go in web development or new sections-->
-                </ul>
+            <h1 class="big-header"><a class="big-header-a">Other technical skills</a></h1>
+            <div class="container-of-smr" style="width: auto">
+                <div class="section-model-rows" data-id="3"></div>
             </div>
-            <hr>
+            <div class="hover-section other-technical-skills-hover">
+                <hr>
+                <!--<div id="version-control">-->
+                <div>
+                    <h2>Operating Systems</h2>
+                    <ul>
+                        <li>Windows</li>
+                        <li>Linux</li>
+                        <li>OSX</li>
+                    </ul>
+                </div>
+                <!--<div id="operating-systems">-->
+                <div>
+                    <h2>Other</h2>
+                    <ul>
+                        <li>Git</li>
+                        <li>Android development</li>
+                        <li>Agile</li>
+                        <li>Design Patterns</li>
+                        <li>Video editing, powerpoint, graphing/mindmap tools</li>
+                        <li>Testing (Unit, Integration)</li>
+                        <li>Microservices</li>
+                        <li>Continous Delivery/integration</li>
+                        <li><span style="font-weight: bold;">IDEs</span>: PyCharm, Visual Studio, Sublime Text, Atom, Eclipse, Android Studio, WebStorm, IntelliJ, IDLE Python 3, Arduino, Keli uVision 4</li>
+                        <!-- todo some of these can go in web development or new sections-->
+                    </ul>
+                </div>
+                <hr>
+            </div>
         </div>
 
-        <div class="container-of-smr" style="width: auto">
-            <div class="section-model-rows" data-id="3"></div>
-        </div>
-        <h1 class="big-header"><a class="big-header-a">Music</a></h1>
-        <div class="container-of-smr" style="width: auto">
-            <div class="section-model-rows" data-id="3"></div>
-        </div>
-        <div class="hover-section">
-            <hr>
-            <h2>Instruments</h2>
-            <ul>
-                <li>Classical Guitar (<span id="classical-guitar-time"></span>)</li>
-                <li>Electric Guitar (<span id="electric-guitar-time"></span>)</li>
-                <li>Piano (<span id="piano-time"></span>)</li>
-                <li>Saxophone (<span id="saxophone-time"></span>)</li>
-            </ul>
-            <h2>Bands and projects</h2>
-            <ul>
-                <li>The Brickfield Park trio (Jazz/Funk mostly)</li>
-                <li>Panic at the Bustop (Busking acoustic guitar duo)</li>
-                <li>The Hacks (Alternative Rock)</li>
-                <li>The Scruffs (Alternative Rock/Rage Against the Machine covers)</li>
-                <li><a href="https://soundcloud.com/user-747580947">SoundCloud</a></li>
-            </ul>
-            <hr>
-        </div>
-
-        <div class="container-of-smr" style="width: auto">
-            <div class="section-model-rows" data-id="3"></div>
-        </div>
-        <h1 class="big-header"><a class="big-header-a">Other Interests</a></h1>
-        <div class="container-of-smr" style="width: auto">
-            <div class="section-model-rows" data-id="3"></div>
-        </div>
-        <div class="hover-section">
-            <hr>
-            <ul>
-                <li>Generalisation</li>
-                <li>Specialisation (it doesn't have to be only one or the other)</li>
-                <li>Philosophy</li>
-                <li>Psychology</li>
-                <li>Rockets and space</li>
-                <li>Business/Economics/Finance</li>
-                <li>Political theory</li>
-                <li>All five uses of language: Listening, Speaking, Reading, Writing and Thinking.</li>
-                <li>Neuroscience</li>
-                <li>Engineering and Science in general</li>
-                <li>Technology applied to anything</li>
-                <li>The Future</li>
-                <li>The Present</li>
-                <li>The Past</li>
-                <li>Listening to music</li>
-                <li>Travelling</li>
-                <li>Geography</li>
-                <li>Books</li>
-                <li>Films</li>
-                <li>Comedy</li>
-                <li>Cycling</li>
-                <li>Exercise</li>
-                <li>Almost everything else</li>
-            </ul>
-            <hr>
+        <div class="music main-section-toggle-btn">
+            <div class="container-of-smr" style="width: auto">
+                <div class="section-model-rows" data-id="3"></div>
+            </div>
+            <h1 class="big-header"><a class="big-header-a">Music</a></h1>
+            <div class="container-of-smr" style="width: auto">
+                <div class="section-model-rows" data-id="3"></div>
+            </div>
+            <div class="hover-section music-hover">
+                <hr>
+                <h2>Instruments</h2>
+                <ul>
+                    <li>Classical Guitar (<span id="classical-guitar-time"></span>)</li>
+                    <li>Electric Guitar (<span id="electric-guitar-time"></span>)</li>
+                    <li>Piano (<span id="piano-time"></span>)</li>
+                    <li>Saxophone (<span id="saxophone-time"></span>)</li>
+                </ul>
+                <h2>Bands and projects</h2>
+                <ul>
+                    <li>The Brickfield Park trio (Jazz/Funk mostly)</li>
+                    <li>Panic at the Bustop (Busking acoustic guitar duo)</li>
+                    <li>The Hacks (Alternative Rock)</li>
+                    <li>The Scruffs (Alternative Rock/Rage Against the Machine covers)</li>
+                    <li><a href="https://soundcloud.com/user-747580947">SoundCloud</a></li>
+                </ul>
+                <hr>
+            </div>
         </div>
 
-        <!--<div>todo add education and previous work here</div>-->
-        <!-- todo add email link and music section and current book and other interests. -->
+        <div class="other-interests main-section-toggle-btn">
+            <div class="container-of-smr" style="width: auto">
+                <div class="section-model-rows" data-id="3"></div>
+            </div>
+            <h1 class="big-header"><a class="big-header-a">Other Interests</a></h1>
+            <div class="container-of-smr" style="width: auto">
+                <div class="section-model-rows" data-id="3"></div>
+            </div>
+            <div class="hover-section other-interests-hover">
+                <hr>
+                <ul>
+                    <li>Generalisation</li>
+                    <li>Specialisation (it doesn't have to be only one or the other)</li>
+                    <li>Philosophy</li>
+                    <li>Psychology</li>
+                    <li>Rockets and space</li>
+                    <li>Business/Economics/Finance</li>
+                    <li>Political theory</li>
+                    <li>All five uses of language: Listening, Speaking, Reading, Writing and Thinking.</li>
+                    <li>Neuroscience</li>
+                    <li>Engineering and Science in general</li>
+                    <li>Technology applied to anything</li>
+                    <li>The Future</li>
+                    <li>The Present</li>
+                    <li>The Past</li>
+                    <li>Listening to music</li>
+                    <li>Travelling</li>
+                    <li>Geography</li>
+                    <li>Books</li>
+                    <li>Films</li>
+                    <li>Comedy</li>
+                    <li>Cycling</li>
+                    <li>Exercise</li>
+                    <li>Almost everything else</li>
+                </ul>
+                <hr>
+            </div>
 
+            <!--<div>todo add education and previous work here</div>-->
+            <!-- todo add email link and music section and current book and other interests. -->
+
+        </div>
     </div>
 
     <div class="button-holder">
@@ -664,6 +673,37 @@
             $fpsDisplay.show();
             setupFlashyAnimations();
             $(this).remove();
+        });
+
+        var showOrHide = function(jQueryStr, makeHidden) {
+            console.log(jQueryStr, makeHidden);
+            if (makeHidden == true) {
+                $(jQueryStr).hide();
+            }
+            else {
+                $(jQueryStr).show();
+            }
+        }
+
+        var allHeadingClickHandlers = ['.programming-langs', '.fields-specialisations', '.other-technical-skills', '.other-interests', '.music'];
+        var hiddenArray = [true, true, true, true, false];
+        for (let i = 0; i < allHeadingClickHandlers.length; i++) {
+            console.log(i);
+            console.log(hiddenArray[i]);
+            /*$(allHeadingClickHandlers[i] + '-hover').hide();*/
+            showOrHide(allHeadingClickHandlers[i] + '-hover', hiddenArray[i]);
+            $(allHeadingClickHandlers[i]).click(function() {
+                hiddenArray[i] = !hiddenArray[i]; // invert boolean to make opposite
+                showOrHide(allHeadingClickHandlers[i] + '-hover', hiddenArray[i]); // hide or show hover sections on new boolean
+            });
+        }
+
+        var currentBooleanForClickOfAllHeadings = false;
+        $('.open-close-all-headings').click(function() {
+            currentBooleanForClickOfAllHeadings = !currentBooleanForClickOfAllHeadings;
+            for (let i = 0; i < allHeadingClickHandlers.length; i++) {
+                showOrHide(allHeadingClickHandlers[i] + '-hover', currentBooleanForClickOfAllHeadings);
+            }
         });
     })
 </script>
