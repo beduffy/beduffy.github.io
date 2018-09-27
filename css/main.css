@@ -284,3 +284,9 @@ body {
     .tooltip:hover .tooltiptext {
         visibility: visible;
     }
+
+    /* add to fa*/
+
+    fa:hover {
+        color: blue;
+    }
