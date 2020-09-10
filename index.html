@@ -161,7 +161,53 @@
             <div class="container-of-smr" style="width: auto">
                 <div class="section-model-rows" data-id="1"></div>
             </div>
-            <h1 class="big-header timeline main-section-toggle-btn"><a class="big-header-a">Timeline</a></h1>
+            <h1 class="big-header short-timeline main-section-toggle-btn"><a class="big-header-a">Short timeline</a></h1>
+            <div class="container-of-smr" style="width: auto">
+                <div class="section-model-rows" data-id="1"></div>
+            </div>
+
+
+            <div class="hover-section principles-text short-timeline-hover">
+            <hr>
+                <ul>
+                    <li>
+                        <b>2020</b>:
+                        Moved to Berlin with the two other founders of MTank to go full-time into creating thing (<a href="http://www.thing.house">www.thing.house</a>).
+                    </li>
+                    <li>
+                        <b>2019</b>:
+                       Left Accenture in May 2019 to begin properly learning and working on robotics projects.
+                    </li>
+                    <li>
+                        <b>2017</b>:
+                        Started as Data Scientist in Accenture at the Dock Innovation Centre in March.
+                    </li>
+                <li>
+                        <b>2016</b>:
+                        Finished 4th year Computer Engineering at TCD. Founded <a href="http://www.themtank.org/">MTank</a>. Did a 3 month internship at <a href="https://www.intuition.com/">Intuition</a> as a Full Stack web developer.
+                        After that, 6 month "hack sabbatical" to upskill for a job in Data Science.
+                    </li>
+                    <li>
+                        <b>2015</b>:
+                        Got my first job (and best possible first job ever) as a full stack web developer intern working at <a href="https://www.pointy.com">Pointy</a>.
+                    </li>
+                    <li>
+                        <b>2014</b>:
+                        Finished 2nd year General Engineering and specialised into Computer Engineering for the last 2 years.
+                    </li>
+                    <li><b>2012 and before</b>:
+                        Birth -> Kindergarten -> Primary School -> Classical Guitar (age 7) -> Secondary school -> became good at math and music -> had a crisis dichotomy about which career path to choose out of both but "accidentally" chose engineering -> Started 1st Year General Engineering
+                    </li>
+                </ul>
+                <hr>
+            </div>
+        </div>
+
+        <div class="">
+            <div class="container-of-smr" style="width: auto">
+                <div class="section-model-rows" data-id="1"></div>
+            </div>
+            <h1 class="big-header timeline main-section-toggle-btn"><a class="big-header-a">Full timeline</a></h1>
             <div class="container-of-smr" style="width: auto">
                 <div class="section-model-rows" data-id="1"></div>
             </div>
@@ -741,13 +787,13 @@
             }
         }
 
-        var allHeadingClickHandlers = ['.links', '.short-bio', '.publications', '.timeline', '.principles', '.programming-langs', '.fields-specialisations', '.other-technical-skills',
+        var allHeadingClickHandlers = ['.links', '.short-bio', '.publications', '.short-timeline', '.timeline', '.principles', '.programming-langs', '.fields-specialisations', '.other-technical-skills',
                                        '.music', '.other-interests'];
 
         var hiddenArray = new Array(allHeadingClickHandlers.length).fill(true);
         //hiddenArray[7] = false; // make "music" true just to highlight that
         for (let i = 0; i < allHeadingClickHandlers.length; i++) {
-            if (i < 3) {
+            if (i < 4) {
                 hiddenArray[i] = false;
             }
 
